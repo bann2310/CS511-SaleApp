@@ -144,40 +144,40 @@
     <Compile Include="Business\CartAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
     <Compile Include="Emun\CartStatus.cs" />
-    <Compile Include="Login\ChangePasswordFPUC.cs">
+    <Compile Include="LoginPage\ChangePasswordFPUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Login\ChangePasswordFPUC.Designer.cs">
+    <Compile Include="LoginPage\ChangePasswordFPUC.Designer.cs">
       <DependentUpon>ChangePasswordFPUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\ConfirmCodeFPUC.cs">
+    <Compile Include="LoginPage\ConfirmCodeFPUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Login\ConfirmCodeFPUC.Designer.cs">
+    <Compile Include="LoginPage\ConfirmCodeFPUC.Designer.cs">
       <DependentUpon>ConfirmCodeFPUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\ForgotPasswordUC.cs">
+    <Compile Include="LoginPage\ForgotPasswordUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Login\ForgotPasswordUC.Designer.cs">
+    <Compile Include="LoginPage\ForgotPasswordUC.Designer.cs">
       <DependentUpon>ForgotPasswordUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\Login.cs">
+    <Compile Include="LoginPage\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\Login.Designer.cs">
+    <Compile Include="LoginPage\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\LoginUC.cs">
+    <Compile Include="LoginPage\LoginUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Login\LoginUC.Designer.cs">
+    <Compile Include="LoginPage\LoginUC.Designer.cs">
       <DependentUpon>LoginUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\RegisterUC.cs">
+    <Compile Include="LoginPage\RegisterUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Login\RegisterUC.Designer.cs">
+    <Compile Include="LoginPage\RegisterUC.Designer.cs">
       <DependentUpon>RegisterUC.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPage\Carts\Cart.cs">
@@ -192,10 +192,10 @@
     <Compile Include="MainPage\Carts\CartItem.Designer.cs">
       <DependentUpon>CartItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainPage\Informations\Information.cs">
+    <Compile Include="InformationPage\Information.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainPage\Informations\Information.Designer.cs">
+    <Compile Include="InformationPage\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPage\Informations\InforMini.cs">
@@ -210,11 +210,17 @@
     <Compile Include="MainPage\MainA.Designer.cs">
       <DependentUpon>MainA.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainPage\MainProduct\HomePage.cs">
+    <Compile Include="MainPage\UCHome\AdsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainPage\MainProduct\HomePage.Designer.cs">
-      <DependentUpon>HomePage.cs</DependentUpon>
+    <Compile Include="MainPage\UCHome\AdsUC.Designer.cs">
+      <DependentUpon>AdsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage\UCHome\HomePageUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainPage\UCHome\HomePageUC.Designer.cs">
+      <DependentUpon>HomePageUC.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPage\Products\ProductDetails.cs">
       <SubType>UserControl</SubType>
@@ -232,22 +238,22 @@
     <Compile Include="ViewModel\User\ConfirmCodeFPRequest.cs" />
     <Compile Include="ViewModel\User\LoginRequest.cs" />
     <Compile Include="ViewModel\User\RegisterRequest.cs" />
-    <EmbeddedResource Include="Login\ChangePasswordFPUC.resx">
+    <EmbeddedResource Include="LoginPage\ChangePasswordFPUC.resx">
       <DependentUpon>ChangePasswordFPUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\ConfirmCodeFPUC.resx">
+    <EmbeddedResource Include="LoginPage\ConfirmCodeFPUC.resx">
       <DependentUpon>ConfirmCodeFPUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\ForgotPasswordUC.resx">
+    <EmbeddedResource Include="LoginPage\ForgotPasswordUC.resx">
       <DependentUpon>ForgotPasswordUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\Login.resx">
+    <EmbeddedResource Include="LoginPage\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\LoginUC.resx">
+    <EmbeddedResource Include="LoginPage\LoginUC.resx">
       <DependentUpon>LoginUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login\RegisterUC.resx">
+    <EmbeddedResource Include="LoginPage\RegisterUC.resx">
       <DependentUpon>RegisterUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage\Carts\Cart.resx">
@@ -256,7 +262,7 @@
     <EmbeddedResource Include="MainPage\Carts\CartItem.resx">
       <DependentUpon>CartItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainPage\Informations\Information.resx">
+    <EmbeddedResource Include="InformationPage\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage\Informations\InforMini.resx">
@@ -265,8 +271,11 @@
     <EmbeddedResource Include="MainPage\MainA.resx">
       <DependentUpon>MainA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainPage\MainProduct\HomePage.resx">
-      <DependentUpon>HomePage.cs</DependentUpon>
+    <EmbeddedResource Include="MainPage\UCHome\AdsUC.resx">
+      <DependentUpon>AdsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage\UCHome\HomePageUC.resx">
+      <DependentUpon>HomePageUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage\Products\ProductDetails.resx">
       <DependentUpon>ProductDetails.cs</DependentUpon>

@@ -86,7 +86,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "InforMini";
-            this.Size = new System.Drawing.Size(148, 98);
+            this.Size = new System.Drawing.Size(150, 100);
             this.ResumeLayout(false);
             this.PerformLayout();
 

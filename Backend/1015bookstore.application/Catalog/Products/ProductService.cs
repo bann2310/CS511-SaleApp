@@ -514,7 +514,7 @@ namespace _1015bookstore.application.Catalog.Products
         {
             var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim();
             var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
-            await _storageService.SaveFileAsyncFE_user(file.OpenReadStream(), fileName);
+            //await _storageService.SaveFileAsyncFE_user(file.OpenReadStream(), fileName);
             await _storageService.SaveFileAsyncFE_admin(file.OpenReadStream(), fileName);
             await _storageService.SaveFileAsyncFE_winform(file.OpenReadStream(), fileName);
             return fileName;

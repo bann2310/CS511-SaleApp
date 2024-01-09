@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.body = new System.Windows.Forms.Panel();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -71,7 +72,7 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(0, 0);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(1404, 80);
+            this.metroPanel1.Size = new System.Drawing.Size(1462, 80);
             this.metroPanel1.TabIndex = 1;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -82,7 +83,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1252, 19);
+            this.pictureBox4.Location = new System.Drawing.Point(1323, 19);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -96,7 +97,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1177, 19);
+            this.pictureBox3.Location = new System.Drawing.Point(1239, 19);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -199,7 +200,7 @@
             this.close.IconColor = System.Drawing.SystemColors.ControlText;
             this.close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.close.IconSize = 40;
-            this.close.Location = new System.Drawing.Point(1343, 19);
+            this.close.Location = new System.Drawing.Point(1397, 19);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(40, 40);
             this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -251,7 +252,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1177, 15);
+            this.button2.Location = new System.Drawing.Point(1264, 15);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 46);
             this.button2.TabIndex = 17;
@@ -260,13 +261,24 @@
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // body
+            // 
+            this.body.AutoScroll = true;
+            this.body.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.body.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.body.Location = new System.Drawing.Point(0, 80);
+            this.body.Name = "body";
+            this.body.Size = new System.Drawing.Size(1462, 922);
+            this.body.TabIndex = 2;
+            // 
             // MainA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1404, 984);
+            this.ClientSize = new System.Drawing.Size(1462, 1002);
             this.ControlBox = false;
+            this.Controls.Add(this.body);
             this.Controls.Add(this.metroPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -303,5 +315,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel body;
     }
 }

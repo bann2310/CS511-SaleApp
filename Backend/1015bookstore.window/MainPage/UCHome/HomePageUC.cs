@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _1015bookstore.window.MainPage.MainProduct
 {
-    public partial class HomePage : UserControl
+    public partial class HomePageUC : UserControl
     {
-        public HomePage()
+        public HomePageUC()
         {
             InitializeComponent();
         }
