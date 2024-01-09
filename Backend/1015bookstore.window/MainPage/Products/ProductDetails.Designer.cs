@@ -42,12 +42,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.kichthuoc = new System.Windows.Forms.Label();
+            this.tacgia = new System.Windows.Forms.Label();
+            this.namxuatban = new System.Windows.Forms.Label();
+            this.nhacungcap = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.nhaxuatban = new System.Windows.Forms.Label();
+            this.khohang = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -204,53 +205,53 @@
             this.label12.TabIndex = 2;
             this.label12.Text = "Nhà cung cấp:";
             // 
-            // label13
+            // kichthuoc
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.label13.Location = new System.Drawing.Point(261, 195);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(123, 28);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Danh mục:";
+            this.kichthuoc.AutoSize = true;
+            this.kichthuoc.BackColor = System.Drawing.Color.Transparent;
+            this.kichthuoc.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kichthuoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.kichthuoc.Location = new System.Drawing.Point(261, 195);
+            this.kichthuoc.Name = "kichthuoc";
+            this.kichthuoc.Size = new System.Drawing.Size(87, 28);
+            this.kichthuoc.TabIndex = 2;
+            this.kichthuoc.Text = "hehehe";
             // 
-            // label14
+            // tacgia
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.label14.Location = new System.Drawing.Point(260, 315);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(123, 28);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Danh mục:";
+            this.tacgia.AutoSize = true;
+            this.tacgia.BackColor = System.Drawing.Color.Transparent;
+            this.tacgia.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tacgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.tacgia.Location = new System.Drawing.Point(260, 315);
+            this.tacgia.Name = "tacgia";
+            this.tacgia.Size = new System.Drawing.Size(82, 28);
+            this.tacgia.TabIndex = 2;
+            this.tacgia.Text = "bao ne";
             // 
-            // label15
+            // namxuatban
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.label15.Location = new System.Drawing.Point(493, 355);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(123, 28);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Danh mục:";
+            this.namxuatban.AutoSize = true;
+            this.namxuatban.BackColor = System.Drawing.Color.Transparent;
+            this.namxuatban.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namxuatban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.namxuatban.Location = new System.Drawing.Point(260, 355);
+            this.namxuatban.Name = "namxuatban";
+            this.namxuatban.Size = new System.Drawing.Size(64, 28);
+            this.namxuatban.TabIndex = 2;
+            this.namxuatban.Text = "2125";
             // 
-            // label16
+            // nhacungcap
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.label16.Location = new System.Drawing.Point(260, 275);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(123, 28);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Danh mục:";
+            this.nhacungcap.AutoSize = true;
+            this.nhacungcap.BackColor = System.Drawing.Color.Transparent;
+            this.nhacungcap.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhacungcap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.nhacungcap.Location = new System.Drawing.Point(260, 275);
+            this.nhacungcap.Name = "nhacungcap";
+            this.nhacungcap.Size = new System.Drawing.Size(103, 28);
+            this.nhacungcap.TabIndex = 2;
+            this.nhacungcap.Text = "huhuhuh";
             // 
             // label17
             // 
@@ -264,17 +265,29 @@
             this.label17.TabIndex = 2;
             this.label17.Text = "Danh mục:";
             // 
-            // label18
+            // nhaxuatban
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.label18.Location = new System.Drawing.Point(260, 235);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(123, 28);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Danh mục:";
+            this.nhaxuatban.AutoSize = true;
+            this.nhaxuatban.BackColor = System.Drawing.Color.Transparent;
+            this.nhaxuatban.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhaxuatban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.nhaxuatban.Location = new System.Drawing.Point(260, 235);
+            this.nhaxuatban.Name = "nhaxuatban";
+            this.nhaxuatban.Size = new System.Drawing.Size(62, 28);
+            this.nhaxuatban.TabIndex = 2;
+            this.nhaxuatban.Text = "hehe";
+            // 
+            // khohang
+            // 
+            this.khohang.AutoSize = true;
+            this.khohang.BackColor = System.Drawing.Color.Transparent;
+            this.khohang.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.khohang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.khohang.Location = new System.Drawing.Point(261, 395);
+            this.khohang.Name = "khohang";
+            this.khohang.Size = new System.Drawing.Size(116, 28);
+            this.khohang.TabIndex = 2;
+            this.khohang.Text = "12231312";
             // 
             // ProductDetails
             // 
@@ -283,11 +296,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.nhaxuatban);
+            this.Controls.Add(this.nhacungcap);
+            this.Controls.Add(this.khohang);
+            this.Controls.Add(this.namxuatban);
+            this.Controls.Add(this.tacgia);
+            this.Controls.Add(this.kichthuoc);
             this.Controls.Add(this.thuonghieu);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -325,11 +339,12 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label kichthuoc;
+        private System.Windows.Forms.Label tacgia;
+        private System.Windows.Forms.Label namxuatban;
+        private System.Windows.Forms.Label nhacungcap;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label nhaxuatban;
+        private System.Windows.Forms.Label khohang;
     }
 }
