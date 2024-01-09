@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,7 @@ namespace _1015bookstore.window.MainPage
         private int amount_;
         private string picture_;
         private CartStatus status_;
-        private string filepath = "D:\\Data\\MonHoc\\Web-SE347\\Project\\1015bookstore__git\\1015Bookstore\\Backend\\1015bookstore.window\\Img\\user-content\\";
+        private string filepath = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())), @"Img\user-content");
         private CartAPIClient _cartAPIClient;
         public CartItem(int _id, string _name, decimal _price, int _amount, string _picture, CartStatus _status)
         {

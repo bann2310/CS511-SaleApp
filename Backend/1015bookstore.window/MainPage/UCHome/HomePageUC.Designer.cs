@@ -1,6 +1,6 @@
 ﻿namespace _1015bookstore.window.MainPage.MainProduct
 {
-    partial class HomePage
+    partial class HomePageUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePageUC));
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -66,6 +66,7 @@
             this.panel1 = new CSharp.Winform.UI.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.adsUC1 = new _1015bookstore.window.MainPage.MainProduct.AdsUC();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -558,12 +559,22 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Bookstore";
             // 
-            // HomePage
+            // adsUC1
+            // 
+            this.adsUC1.BackColor = System.Drawing.Color.Transparent;
+            this.adsUC1.Location = new System.Drawing.Point(45, 25);
+            this.adsUC1.Name = "adsUC1";
+            this.adsUC1.Size = new System.Drawing.Size(1350, 400);
+            this.adsUC1.TabIndex = 4;
+            // 
+            // HomePageUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.adsUC1);
             this.Controls.Add(this.metroPanel2);
-            this.Name = "HomePage";
+            this.Name = "HomePageUC";
             this.Size = new System.Drawing.Size(1440, 1440);
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
@@ -622,5 +633,6 @@
         private CSharp.Winform.UI.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
+        private AdsUC adsUC1;
     }
 }

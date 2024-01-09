@@ -71,9 +71,9 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 298);
+            this.panel2.Location = new System.Drawing.Point(0, 300);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(298, 40);
+            this.panel2.Size = new System.Drawing.Size(300, 40);
             this.panel2.TabIndex = 3;
             // 
             // panel3
@@ -120,7 +120,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "Cart";
-            this.Size = new System.Drawing.Size(298, 338);
+            this.Size = new System.Drawing.Size(300, 340);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

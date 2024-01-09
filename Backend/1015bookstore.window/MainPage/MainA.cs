@@ -1,5 +1,6 @@
 ﻿using _1015bookstore.window.Main;
 using _1015bookstore.window.MainPage;
+using _1015bookstore.window.MainPage.MainProduct;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace _1015bookstore.window
     {
         UserControl cart;
         UserControl infor;
+        UserControl currentUC;
         public MainA()
         {
             InitializeComponent();
@@ -32,6 +34,7 @@ namespace _1015bookstore.window
                 pictureBox4.Visible = true;
                 button2.Visible = false;
             }
+            homepage();
         }
         private void close_Click(object sender, EventArgs e)
         {
@@ -58,6 +61,7 @@ namespace _1015bookstore.window
             button2.Visible = true;
             this.Controls.Remove(infor);
             //redirect main
+            homepage();
         }
         #endregion
 
@@ -114,7 +118,7 @@ namespace _1015bookstore.window
             {
                 var cart_ = new Cart(Properties.Settings.Default.id);
                 this.Controls.Add(cart_);
-                cart_.Location = new Point(919, 56);
+                cart_.Location = new Point(979, 56);
                 cart_.BringToFront();
                 cart_.Show();
                 cart = cart_;
@@ -137,7 +141,7 @@ namespace _1015bookstore.window
             {
                 var informini = new InforMini(Properties.Settings.Default.id);
                 this.Controls.Add(informini);
-                informini.Location = new Point(1143, 56);
+                informini.Location = new Point(1212, 56);
                 informini.BringToFront();
                 informini.Show();
                 infor = informini;
@@ -153,6 +157,31 @@ namespace _1015bookstore.window
         }
         #endregion
 
+        #region body
+        public void homepage()
+        {
+            if (currentUC != null)
+            {
+                body.Controls.Remove(currentUC);
 
+                var home = new HomePageUC();
+                body.Controls.Add(home);
+                home.Location = new Point(0,0);
+                home.Show();
+
+                currentUC = home;
+            }
+            else
+            {
+                var home = new HomePageUC();
+                body.Controls.Add(home);
+                home.Location = new Point(0, 0);
+                home.Show();
+
+                currentUC = home;
+            }    
+           
+        }
+        #endregion
     }
 }
