@@ -222,11 +222,23 @@
     <Compile Include="MainPage\UCHome\HomePageUC.Designer.cs">
       <DependentUpon>HomePageUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainPage\Products\ProductDetails.cs">
+    <Compile Include="ProductPage\ProductDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainPage\Products\ProductDetails.Designer.cs">
+    <Compile Include="ProductPage\ProductDetails.Designer.cs">
       <DependentUpon>ProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPage\Reviews\ReviewDetailUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductPage\Reviews\ReviewDetailUC.Designer.cs">
+      <DependentUpon>ReviewDetailUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPage\Reviews\ReviewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductPage\Reviews\ReviewUC.Designer.cs">
+      <DependentUpon>ReviewUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -277,8 +289,14 @@
     <EmbeddedResource Include="MainPage\UCHome\HomePageUC.resx">
       <DependentUpon>HomePageUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainPage\Products\ProductDetails.resx">
+    <EmbeddedResource Include="ProductPage\ProductDetails.resx">
       <DependentUpon>ProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductPage\Reviews\ReviewDetailUC.resx">
+      <DependentUpon>ReviewDetailUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductPage\Reviews\ReviewUC.resx">
+      <DependentUpon>ReviewUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -307,6 +325,8 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MainPage\Products\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
