@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _1015bookstore.window.MainPage.Products
+namespace _1015bookstore.window.ProductPage
 {
-    public partial class ProductDetails : UserControl
+    public partial class ReviewUC : UserControl
     {
-        public ProductDetails()
+        public ReviewUC()
         {
             InitializeComponent();
         }

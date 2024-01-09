@@ -127,7 +127,7 @@
             this.label_u.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.label_u.Location = new System.Drawing.Point(50, 7);
             this.label_u.Name = "label_u";
-            this.label_u.Size = new System.Drawing.Size(188, 22);
+            this.label_u.Size = new System.Drawing.Size(187, 20);
             this.label_u.TabIndex = 16;
             this.label_u.Text = "Sách bao rẻ, rất rẻ áaaa";
             this.label_u.Click += new System.EventHandler(this.Typing_Click);

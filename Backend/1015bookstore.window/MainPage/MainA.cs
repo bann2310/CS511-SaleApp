@@ -151,8 +151,7 @@ namespace _1015bookstore.window
                 pictureBox4.BackColor = Color.White;
             }
         }
+
         #endregion
-
-
     }
 }
