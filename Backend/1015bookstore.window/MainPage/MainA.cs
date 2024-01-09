@@ -1,5 +1,6 @@
 ﻿using _1015bookstore.window.Main;
 using _1015bookstore.window.MainPage;
+using _1015bookstore.window.MainPage.Informations;
 using _1015bookstore.window.MainPage.MainProduct;
 using System;
 using System.Collections.Generic;
@@ -60,6 +61,7 @@ namespace _1015bookstore.window
             pictureBox4.Visible = false;
             button2.Visible = true;
             this.Controls.Remove(infor);
+            infor = null;
             //redirect main
             homepage();
         }
@@ -155,6 +157,24 @@ namespace _1015bookstore.window
                 pictureBox4.BackColor = Color.White;
             }
         }
+
+        public void inforpage()
+        {
+            this.Controls.Remove(infor);
+            pictureBox4.BackColor = Color.White;
+            infor = null;
+
+            body.Controls.Remove(currentUC);
+
+            var page = new Information(Properties.Settings.Default.id);
+            
+            body.Controls.Add(page);
+            page.Location = new Point(0, 0);
+            page.Show();
+            currentUC = page;
+
+            
+        }
         #endregion
 
         #region body
@@ -164,21 +184,21 @@ namespace _1015bookstore.window
             {
                 body.Controls.Remove(currentUC);
 
-                var home = new HomePageUC();
-                body.Controls.Add(home);
-                home.Location = new Point(0,0);
-                home.Show();
+                var page = new HomePageUC();
+                body.Controls.Add(page);
+                page.Location = new Point(0,0);
+                page.Show();
 
-                currentUC = home;
+                currentUC = page;
             }
             else
             {
-                var home = new HomePageUC();
-                body.Controls.Add(home);
-                home.Location = new Point(0, 0);
-                home.Show();
+                var page = new HomePageUC();
+                body.Controls.Add(page);
+                page.Location = new Point(0, 0);
+                page.Show();
 
-                currentUC = home;
+                currentUC = page;
             }    
            
         }

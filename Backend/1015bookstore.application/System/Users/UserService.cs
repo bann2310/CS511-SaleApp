@@ -180,6 +180,8 @@ namespace _1015bookstore.application.System.Users
                 firstname = request.sUser_firstname,
                 lastname = request.sUser_lastname,
                 UserName = request.sUser_username,
+                dob = new DateTime(1990,1,1),
+                sex = true
             };
             var result = await _userManager.CreateAsync(user, request.sUser_password);
 
