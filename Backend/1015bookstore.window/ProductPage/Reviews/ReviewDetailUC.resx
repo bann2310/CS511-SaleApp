@@ -133,7 +133,7 @@
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAWxJREFUSEvtVttxwjAQdAkpgRKuBEpwCZSQEiTTQDogHVACn5mBeEQHlEAJyS4+
+        DAAACwwBP0AiyAAAAWxJREFUSEvtVttxwjAQdAkpgRKuBEpwCZSQEiTTQDogHVACn5mBeEQHlEAJyS4+
         8TwSWbL9kcnO7Id91q5OOp1c/SMVEtwLqY/TAIYzCc2h44TmMFvA9OvE1jt9PT402844NMdJsr7JNrJt
         XjU8HmB0nW3kQcPjwMz2TDfXz4aHhOXGNiX9Rj8rAwtGPnBsPl0tLTLdNyvb8Iqtf+N+y87NZeskqei4
         VMhoDQaIoFIN4TxCi5rUdrXaXSB7BsyBA3L5uB2YDZZm0EzvyfMuancLBGIrtAaWkK3VNo0YwZymM5X/
@@ -145,7 +145,7 @@
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAWxJREFUSEvtVttxwjAQdAkpgRKuBEpwCZSQEiTTQDogHVACn5mBeEQHlEAJyS4+
+        DQAACw0B7QfALAAAAWxJREFUSEvtVttxwjAQdAkpgRKuBEpwCZSQEiTTQDogHVACn5mBeEQHlEAJyS4+
         8TwSWbL9kcnO7Id91q5OOp1c/SMVEtwLqY/TAIYzCc2h44TmMFvA9OvE1jt9PT402844NMdJsr7JNrJt
         XjU8HmB0nW3kQcPjwMz2TDfXz4aHhOXGNiX9Rj8rAwtGPnBsPl0tLTLdNyvb8Iqtf+N+y87NZeskqei4
         VMhoDQaIoFIN4TxCi5rUdrXaXSB7BsyBA3L5uB2YDZZm0EzvyfMuancLBGIrtAaWkK3VNo0YwZymM5X/
@@ -157,7 +157,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAWxJREFUSEvtVttxwjAQdAkpgRKuBEpwCZSQEiTTQDogHVACn5mBeEQHlEAJyS4+
+        DgAACw4BQL7hQQAAAWxJREFUSEvtVttxwjAQdAkpgRKuBEpwCZSQEiTTQDogHVACn5mBeEQHlEAJyS4+
         8TwSWbL9kcnO7Id91q5OOp1c/SMVEtwLqY/TAIYzCc2h44TmMFvA9OvE1jt9PT402844NMdJsr7JNrJt
         XjU8HmB0nW3kQcPjwMz2TDfXz4aHhOXGNiX9Rj8rAwtGPnBsPl0tLTLdNyvb8Iqtf+N+y87NZeskqei4
         VMhoDQaIoFIN4TxCi5rUdrXaXSB7BsyBA3L5uB2YDZZm0EzvyfMuancLBGIrtAaWkK3VNo0YwZymM5X/
@@ -169,7 +169,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAWxJREFUSEvtVttxwjAQdAkpgRKuBEpwCZSQEiTTQDogHVACn5mBeEQHlEAJyS4+
+        DwAACw8BkvkDpQAAAWxJREFUSEvtVttxwjAQdAkpgRKuBEpwCZSQEiTTQDogHVACn5mBeEQHlEAJyS4+
         8TwSWbL9kcnO7Id91q5OOp1c/SMVEtwLqY/TAIYzCc2h44TmMFvA9OvE1jt9PT402844NMdJsr7JNrJt
         XjU8HmB0nW3kQcPjwMz2TDfXz4aHhOXGNiX9Rj8rAwtGPnBsPl0tLTLdNyvb8Iqtf+N+y87NZeskqei4
         VMhoDQaIoFIN4TxCi5rUdrXaXSB7BsyBA3L5uB2YDZZm0EzvyfMuancLBGIrtAaWkK3VNo0YwZymM5X/
@@ -178,10 +178,10 @@
         nFfZnXn/5cIYdL2MbP8wquobhvBPFKRMAvcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="avatar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANYAAAD6CAYAAADdjbljAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAJuxJREFUeF7tnQu43VSZ93l8cHSQUUfkQ4aLUE57slZOC1hlEFDqIOA4fnj7xsug
+        EQAACxEBf2RfkQAAJuxJREFUeF7tnQu43VSZ93l8cHSQUUfkQ4aLUE57slZOC1hlEFDqIOA4fnj7xsug
         DPMxFKGedu8k55QC2uONiyOXwVFR5DqKWhXac3ZWsttCEXAGBBxRUBShXARULB3xwnBpnXelb0/PTt7s
         neyd7JPsvL/n+T/Qs9c9+ScrybrsFMfydXNeZivjU/q/+CeGYbLA9szf2554wFor3op/YhimV2wl77E9
         +SfLE1stJT+7+I6FL8SfGIbpFluZX9PGmqGba425c/BnhmG6Ae5YnwkZ60/wt831hjxjYsN+L8ZgDMOk
@@ -352,5 +352,26 @@
   </data>
   <data name="binhluan.Text" xml:space="preserve">
     <value>Điều mình thích nhất ở Linh tộc: Tái thiết thế giới đó chính là sự hòa quyện hoàn hảo những màu sắc kỳ ảo và chất liệu lịch sử, giữa những cái siêu thực và những điều màu nhiệm. Cuốn sách lấy bối cảnh những buổi bình minh đầu tiên của nền văn minh loài người, khi những hiểu biết của con người về thế giới thật hết đỗi nguyên sơ và sự tự do của họ còn chưa bị tù hãm bởi định kiến xã hội hay những luật lệ, nguyên tắc hà khắc, gò bó. Họ gắn kết với nhau bởi linh tộc, tuân thủ pháp luật bằng sự tự do bất khả xâm phạm. Mỗi trang sách được lật mở là lại thêm một tập tục, một điều mới lạ mà mình có cơ hội được tiếp xúc. Ilka Tampke đã vô cùng thành công khi bao bọc độc giả trong bầu không khí truyện đắm mình trong màu sắc cổ xưa, huyền bí, dẫn dắt người đọc tới khám phá cả một thế giới nguyên sơ mà đẹp đẽ tới choáng ngợp, rùng mình.</value>
+  </data>
+  <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAFcAAAAwCAIAAADrW3HZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        cwAAEnMBjCK5BwAAA3BJREFUaEPtmc9rE0EUgP3T/AO827ve7d0/wB56i6cW1NYeEpUSaDFUZCstWbQ2
+        LdJIqWspBqUaUCmpkPYyfm/fuK6Ja/dHMewyH0OYmZ0E3jdv3i6bK8ZhjLMgOAuCsyA4C4KzIDgLgrMg
+        5Lfw5MDMvDLHP+yw1OS0sNs3U6umtiutAuS0sPnJ3N40x6fiogjD4dD2JkoeC4NzM7ViWkcm+G5urtnJ
+        TBC87/u1Wq3dbtupiZLBwsyWmV6Xdm3Z3O/KDCKuNv5od3fCpRcRBEGn0/E8r3wW2P/dL2bzY+IpoFIi
+        Ij0oKKUFSKoFmheaIympoAUSYdqTTElP1SzI5IrMUzjTUzUL3CwedOXemYmyWiDt9XlpZM95dqIoZH2O
+        7IbYwUTJYOHWurm+Ku3GmtwseXx+fCBFURsz5SWDhTicCyInBe5s2cZNtLzktFAxnAXBWRCcBcFZEJwF
+        wVkQnAWhgIXzM/M+MKcDOywzBSwsPzIP75nGUgVE5LXwZkcUaHv21E4W4+TkpN/v28H/JZcFNr++JPG/
+        eG5FfD62l7IzHA41+EajgQid/AdBiB1cErkstDckck7Et6+SCNq/iFarNTc3VwuhAwRD/ATPJc/z0ihg
+        zcLCwqW/v89ugUTQ/df4SQdKAx3OSAp6vR5h20GYCASmn3YqBvNgByEsG1k5viYH2S1oUVxt2tKAC+3g
+        4uzMrklmxEKn0yEp6vV6s9kcCWbkEvDFxcXF+fl53/d1TbvdZoY1ZJPO5COjhcN3EjBtMPhtgeA1HV6/
+        tMuSiVtgVwlJg+dEgM5D/BIRbm9vc3b4ZMgkZ4rPbrfL6QiXy5pITQ6yWOABQRPB35BhZAEOA+nTLiqT
+        cQv6x4z2CZud1z7s7e2Nby9hMwlYYD3fVS9AiSFltJ+DLBY0bESQCEBpZLj/68WhlgmVkkySBbaa3NY+
+        jFtAQXRq8DVuIX7QspLaQlQU99/aGT0dVEeFLNAFvQ925m+MnAjdVfrEHD8RmvbRJRSgTL3ga3Z2lkv8
+        VHS/QFCRF7mpLUR3xwjClhoZ++uek6JrksskMcRTlz0kBQAFGk9E/BJDrlIFUYNEOvwOk1odSY2Cb/TT
+        WSAq3WfCJtSkpoeCRpqUitQW9C6QshV4lJwIqU8EFXFk55Ma94uykdpCpXEWBGdBcBaMMeYn6u7Q3pkg
+        c+kAAAAASUVORK5CYII=
+</value>
   </data>
 </root>

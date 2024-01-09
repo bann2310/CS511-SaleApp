@@ -45,14 +45,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.commentpanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.reviewDetailUC1 = new _1015bookstore.window.ProductPage.Reviews.ReviewDetailUC();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.commentpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -140,6 +138,7 @@
             // btt_tatca
             // 
             this.btt_tatca.BackColor = System.Drawing.Color.White;
+            this.btt_tatca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btt_tatca.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btt_tatca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
             this.btt_tatca.Location = new System.Drawing.Point(208, 59);
@@ -155,7 +154,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
-            this.label6.Location = new System.Drawing.Point(73, 48);
+            this.label6.Location = new System.Drawing.Point(72, 48);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 28);
             this.label6.TabIndex = 4;
@@ -167,7 +166,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
-            this.label4.Location = new System.Drawing.Point(113, 54);
+            this.label4.Location = new System.Drawing.Point(115, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 5;
@@ -236,20 +235,13 @@
             // 
             // commentpanel
             // 
-            this.commentpanel.Controls.Add(this.reviewDetailUC1);
+            this.commentpanel.BackColor = System.Drawing.Color.White;
             this.commentpanel.Location = new System.Drawing.Point(51, 151);
+            this.commentpanel.Margin = new System.Windows.Forms.Padding(0);
             this.commentpanel.Name = "commentpanel";
-            this.commentpanel.Size = new System.Drawing.Size(1200, 416);
+            this.commentpanel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.commentpanel.Size = new System.Drawing.Size(1200, 185);
             this.commentpanel.TabIndex = 1;
-            // 
-            // reviewDetailUC1
-            // 
-            this.reviewDetailUC1.BackColor = System.Drawing.Color.White;
-            this.reviewDetailUC1.Location = new System.Drawing.Point(0, 5);
-            this.reviewDetailUC1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.reviewDetailUC1.Name = "reviewDetailUC1";
-            this.reviewDetailUC1.Size = new System.Drawing.Size(1200, 112);
-            this.reviewDetailUC1.TabIndex = 0;
             // 
             // ReviewUC
             // 
@@ -267,7 +259,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.commentpanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -290,6 +281,5 @@
         private System.Windows.Forms.Button btt_5sao;
         private System.Windows.Forms.Button btt_tatca;
         private System.Windows.Forms.FlowLayoutPanel commentpanel;
-        private Reviews.ReviewDetailUC reviewDetailUC1;
     }
 }

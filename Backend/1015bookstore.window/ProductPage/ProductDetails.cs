@@ -13,7 +13,7 @@ namespace _1015bookstore.window.MainPage.Products
 {
     public partial class ProductDetails : UserControl
     {
-        private string _motasanpham = "";
+        private string _motasanpham;
         public ProductDetails()
         {
             InitializeComponent();

@@ -12,6 +12,7 @@ namespace _1015bookstore.window.ProductPage.Reviews
 {
     public partial class ReviewDetailUC : UserControl
     {
+        private string _binhluan;
         public ReviewDetailUC()
         {
             InitializeComponent();
@@ -26,12 +27,11 @@ namespace _1015bookstore.window.ProductPage.Reviews
             int x = (totallength / wordperline);
 
             if (x >= 2)
-                binhluan.Height = (x) * 26;
-
+                binhluan.Height = (x) * 30;
             else
-                binhluan.Height = 50;
+                binhluan.Height = 60;
 
-            this.Height = binhluan.Bottom;
+            this.Height = binhluan.Bottom + 40;
         }
     }
 }
