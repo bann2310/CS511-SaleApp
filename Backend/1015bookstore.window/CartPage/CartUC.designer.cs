@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CartUC));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,13 +38,19 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.hethang = new System.Windows.Forms.FlowLayoutPanel();
-            this.totalUC1 = new _1015bookstore.window.CartPage.TotalUC();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.ngunghoatdong = new System.Windows.Forms.FlowLayoutPanel();
+            this.totalUC1 = new _1015bookstore.window.CartPage.TotalUC();
+            this.xoaOOS = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.xoaOOService = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xoaOOS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xoaOOService)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,6 +122,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.xoaOOS);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(0, 273);
             this.panel2.Name = "panel2";
@@ -140,16 +149,11 @@
             this.hethang.Size = new System.Drawing.Size(900, 16);
             this.hethang.TabIndex = 1;
             // 
-            // totalUC1
-            // 
-            this.totalUC1.Location = new System.Drawing.Point(925, 16);
-            this.totalUC1.Name = "totalUC1";
-            this.totalUC1.Size = new System.Drawing.Size(410, 106);
-            this.totalUC1.TabIndex = 2;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.xoaOOService);
+            this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(0, 542);
             this.panel3.Name = "panel3";
@@ -175,6 +179,55 @@
             this.ngunghoatdong.Size = new System.Drawing.Size(897, 16);
             this.ngunghoatdong.TabIndex = 1;
             // 
+            // totalUC1
+            // 
+            this.totalUC1.Location = new System.Drawing.Point(925, 16);
+            this.totalUC1.Name = "totalUC1";
+            this.totalUC1.Size = new System.Drawing.Size(410, 106);
+            this.totalUC1.TabIndex = 2;
+            // 
+            // xoaOOS
+            // 
+            this.xoaOOS.Image = ((System.Drawing.Image)(resources.GetObject("xoaOOS.Image")));
+            this.xoaOOS.Location = new System.Drawing.Point(866, 13);
+            this.xoaOOS.Name = "xoaOOS";
+            this.xoaOOS.Size = new System.Drawing.Size(24, 24);
+            this.xoaOOS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.xoaOOS.TabIndex = 2;
+            this.xoaOOS.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(19)))), ((int)(((byte)(34)))));
+            this.label6.Location = new System.Drawing.Point(797, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 18);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Bỏ tất cả";
+            // 
+            // xoaOOService
+            // 
+            this.xoaOOService.Image = ((System.Drawing.Image)(resources.GetObject("xoaOOService.Image")));
+            this.xoaOOService.Location = new System.Drawing.Point(866, 13);
+            this.xoaOOService.Name = "xoaOOService";
+            this.xoaOOService.Size = new System.Drawing.Size(24, 24);
+            this.xoaOOService.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.xoaOOService.TabIndex = 4;
+            this.xoaOOService.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(19)))), ((int)(((byte)(34)))));
+            this.label7.Location = new System.Drawing.Point(797, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 18);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Bỏ tất cả";
+            // 
             // CartUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -195,6 +248,8 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xoaOOS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xoaOOService)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -214,5 +269,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.FlowLayoutPanel ngunghoatdong;
+        private System.Windows.Forms.PictureBox xoaOOS;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox xoaOOService;
+        private System.Windows.Forms.Label label7;
     }
 }

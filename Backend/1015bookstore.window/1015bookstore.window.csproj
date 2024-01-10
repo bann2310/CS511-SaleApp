@@ -269,6 +269,12 @@
     <Compile Include="InformationPage\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainPage\Chat\ChatUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainPage\Chat\ChatUC.Designer.cs">
+      <DependentUpon>ChatUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage\Informations\InforMini.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -320,6 +326,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="TrendingPage\TrendingItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrendingPage\TrendingItem.Designer.cs">
+      <DependentUpon>TrendingItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrendingPage\TrendingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrendingPage\TrendingUC.Designer.cs">
+      <DependentUpon>TrendingUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\Catalog\Carts\CartAddProduct.cs" />
     <Compile Include="ViewModel\Catalog\Carts\CartViewModel.cs" />
     <Compile Include="ViewModel\ResponseAPI.cs" />
@@ -383,6 +401,9 @@
     <EmbeddedResource Include="InformationPage\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainPage\Chat\ChatUC.resx">
+      <DependentUpon>ChatUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage\Informations\InforMini.resx">
       <DependentUpon>InforMini.cs</DependentUpon>
     </EmbeddedResource>
@@ -417,6 +438,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TrendingPage\TrendingItem.resx">
+      <DependentUpon>TrendingItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrendingPage\TrendingUC.resx">
+      <DependentUpon>TrendingUC.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

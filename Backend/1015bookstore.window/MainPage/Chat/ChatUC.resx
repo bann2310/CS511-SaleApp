@@ -117,27 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="xoaOOS.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAARZJREFUSEu1lc0RgjAQhVOCQygAsAEa0LEUOoHOKMBxOFGAP3fOnnA3GMHwSILB
-        nXmnfXnfZPewQtd5l5wamdaNzDpS/7vS+iL3xTt2qCbOSmwOUJSVQ7hMCmjYQjQVAqixYEOw0poAqLGZ
-        Ogh4Xu9KbX6Y9UyxR/tRHwNuj57LBdHhyktvkAcC2vzohJjh/Mb0sBZ3YIP4hrOsS0aQNeEsK4BlQtaE
-        s5wA1hTC5RvO8gSMY+HS40JeUx4j+p75dFw+EMeS5ws1d+KCLAJQ+Njzh0CALXz0+EEgwBWuZUKQBwPo
-        kStcS0NYqC/o8gSeSLvoB/8+ODEfe9QM1+f409GvkCFIUVapcF3D8Q8cl9onZdBUhlQhXp9b9+ekjZjF
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="xoaOOService.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAARZJREFUSEu1lc0RgjAQhVOCQygAsAEa0LEUOoHOKMBxOFGAP3fOnnA3GMHwSILB
-        nXmnfXnfZPewQtd5l5wamdaNzDpS/7vS+iL3xTt2qCbOSmwOUJSVQ7hMCmjYQjQVAqixYEOw0poAqLGZ
-        Ogh4Xu9KbX6Y9UyxR/tRHwNuj57LBdHhyktvkAcC2vzohJjh/Mb0sBZ3YIP4hrOsS0aQNeEsK4BlQtaE
-        s5wA1hTC5RvO8gSMY+HS40JeUx4j+p75dFw+EMeS5ws1d+KCLAJQ+Njzh0CALXz0+EEgwBWuZUKQBwPo
-        kStcS0NYqC/o8gSeSLvoB/8+ODEfe9QM1+f409GvkCFIUVapcF3D8Q8cl9onZdBUhlQhXp9b9+ekjZjF
-        AAAAAElFTkSuQmCC
+  <data name="content.Text" xml:space="preserve">
+    <value>Xin chào tất cả mọi người lại là mình đây Xin chào tất cả mọi người lại là mình đâyXin chào tất cả mọi người lại là mình đâyXin chào tất cả mọi người lại là mình đâyđâyXin chào tất cả mọi người lại là mình đâyđâyXin chào tất cả mọi người lại là mình đây
+
+
 </value>
   </data>
 </root>
