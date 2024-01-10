@@ -166,24 +166,6 @@
     <Compile Include="Business\FormFile.cs" />
     <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
-    <Compile Include="CartPage\CartItemUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CartPage\CartItemUC.Designer.cs">
-      <DependentUpon>CartItemUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CartPage\CartUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CartPage\CartUC.Designer.cs">
-      <DependentUpon>CartUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CartPage\TotalUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CartPage\TotalUC.Designer.cs">
-      <DependentUpon>TotalUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Emun\CartStatus.cs" />
     <Compile Include="InformationPage\AddressDetail.cs">
       <SubType>UserControl</SubType>
