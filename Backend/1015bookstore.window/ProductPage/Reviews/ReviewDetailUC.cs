@@ -13,6 +13,7 @@ namespace _1015bookstore.window.ProductPage.Reviews
     public partial class ReviewDetailUC : UserControl
     {
         private string _binhluan;
+        
         public ReviewDetailUC()
         {
             InitializeComponent();
