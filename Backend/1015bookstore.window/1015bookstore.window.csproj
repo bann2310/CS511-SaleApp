@@ -332,7 +332,12 @@
     <EmbeddedResource Include="InformationPage\AddressUpdate.resx">
       <DependentUpon>AddressUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InformationPage\InforAddress.resx">
+    
+
+
+
+
+<EmbeddedResource Include="InformationPage\InforAddress.resx">
       <DependentUpon>InforAddress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\InforDetail.resx">
