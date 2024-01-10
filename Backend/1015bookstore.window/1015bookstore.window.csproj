@@ -166,22 +166,28 @@
     <Compile Include="Business\FormFile.cs" />
     <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
+    <Compile Include="CartPage\CartItemOOSUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CartPage\CartItemOOSUC.designer.cs">
+      <DependentUpon>CartItemOOSUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="CartPage\CartItemUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CartPage\CartItemUC.Designer.cs">
+    <Compile Include="CartPage\CartItemUC.designer.cs">
       <DependentUpon>CartItemUC.cs</DependentUpon>
     </Compile>
     <Compile Include="CartPage\CartUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CartPage\CartUC.Designer.cs">
+    <Compile Include="CartPage\CartUC.designer.cs">
       <DependentUpon>CartUC.cs</DependentUpon>
     </Compile>
     <Compile Include="CartPage\TotalUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CartPage\TotalUC.Designer.cs">
+    <Compile Include="CartPage\TotalUC.designer.cs">
       <DependentUpon>TotalUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Emun\CartStatus.cs" />
@@ -326,6 +332,18 @@
     <Compile Include="ViewModel\User\RegisterRequest.cs" />
     <Compile Include="ViewModel\User\UserUpdateRequest.cs" />
     <Compile Include="ViewModel\User\UserViewModel.cs" />
+    <EmbeddedResource Include="CartPage\CartItemOOSUC.resx">
+      <DependentUpon>CartItemOOSUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartPage\CartItemUC.resx">
+      <DependentUpon>CartItemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartPage\CartUC.resx">
+      <DependentUpon>CartUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartPage\TotalUC.resx">
+      <DependentUpon>TotalUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\AddressDetail.resx">
       <DependentUpon>AddressDetail.cs</DependentUpon>
     </EmbeddedResource>
