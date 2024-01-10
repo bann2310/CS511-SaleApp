@@ -8,16 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _1015bookstore.window.ProductPage.ProductPick
+namespace _1015bookstore.window.CartPage
 {
-    public partial class ProductPickUC : UserControl
+    public partial class CartItemUC : UserControl
     {
-        private string _tensanpham, _rating, _danhgia, _luotmua, _ncc, _nxb, _tacgia, _giatien, _diachi, _phiship, _soluong, _tonkho;
-        public ProductPickUC()
+        string _tensanpham, _dongia, _soluong, _sotien;
+        public CartItemUC()
         {
             InitializeComponent();
-            soluong.Text = "1";
+
+            uncheck.Visible = true;
+            check.Visible = false;
         }
+
         private void soluong_TextChanged(object sender, EventArgs e)
         {
             int sl = 1;
@@ -28,12 +31,12 @@ namespace _1015bookstore.window.ProductPage.ProductPick
                 text = text.TrimStart('0');
 
             if (!string.IsNullOrEmpty(text))
-            {           
+            {
                 sl = int.Parse(text);
 
                 if (sl > 99)
                     sl = 99;
-            }    
+            }
 
             soluong.Text = sl.ToString();
         }
@@ -63,8 +66,16 @@ namespace _1015bookstore.window.ProductPage.ProductPick
             soluong.Text = sl.ToString();
         }
 
+        private void uncheck_Click(object sender, EventArgs e)
+        {
+            check.Visible = true;
+            uncheck.Visible = false;
+        }
 
-
-
+        private void check_Click(object sender, EventArgs e)
+        {
+            uncheck.Visible = true;
+            check.Visible = false;
+        }
     }
 }
