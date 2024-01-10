@@ -16,11 +16,12 @@ namespace _1015bookstore.window.CartPage
         public CartUC()
         {
             InitializeComponent();
-            addgiohang();
-            addgiohang();
-            addgiohang();
-            addgiohang();
-            addgiohang();
+            for(int i = 0; i < 4; i++)
+            {
+                addgiohang();
+                addgiohangOOS();
+                addgiohangOOService();
+            }    
         }
 
         private void addgiohang()
@@ -31,8 +32,28 @@ namespace _1015bookstore.window.CartPage
             
             panel2.Location = new Point(0, giohang.Bottom + 10);
             hethang.Location = new Point(0, panel2.Bottom);
-            this.Height = giohang.Bottom + panel2.Height + hethang.Height ;
+            this.Height = giohang.Bottom + panel2.Height + hethang.Height + panel3.Height + ngunghoatdong.Height + 10;
+        }
+        private void addgiohangOOS()
+        {
+            CartItemOOSUC item = new CartItemOOSUC();
+            this.hethang.Controls.Add(item);
+            this.hethang.Height += item.Height;
 
+            panel3.Location = new Point(0, hethang.Bottom + 10);
+            ngunghoatdong.Location = new Point(0, panel3.Bottom);
+            this.Height = giohang.Bottom + panel2.Height + hethang.Height + panel3.Height + ngunghoatdong.Height;
+        }
+
+        private void addgiohangOOService()
+        {
+            CartItemOOSUC item = new CartItemOOSUC();
+            this.ngunghoatdong.Controls.Add(item);
+            this.ngunghoatdong.Height += item.Height;
+
+            //panel3.Location = new Point(0, hethang.Bottom + 10);
+            //ngunghoatdong.Location = new Point(0, panel3.Bottom);
+            this.Height = giohang.Bottom + panel2.Height + hethang.Height + panel3.Height + ngunghoatdong.Height;
         }
     }
 }

@@ -102,7 +102,7 @@
             // soluong
             // 
             this.soluong.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soluong.Location = new System.Drawing.Point(611, 19);
+            this.soluong.Location = new System.Drawing.Point(611, 16);
             this.soluong.Name = "soluong";
             this.soluong.Size = new System.Drawing.Size(59, 32);
             this.soluong.TabIndex = 17;
@@ -115,7 +115,7 @@
             this.cong.BackColor = System.Drawing.Color.White;
             this.cong.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cong.ForeColor = System.Drawing.Color.Black;
-            this.cong.Location = new System.Drawing.Point(672, 18);
+            this.cong.Location = new System.Drawing.Point(672, 15);
             this.cong.Name = "cong";
             this.cong.Size = new System.Drawing.Size(30, 29);
             this.cong.TabIndex = 15;
@@ -128,7 +128,7 @@
             this.tru.BackColor = System.Drawing.Color.White;
             this.tru.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tru.ForeColor = System.Drawing.Color.Black;
-            this.tru.Location = new System.Drawing.Point(579, 18);
+            this.tru.Location = new System.Drawing.Point(579, 15);
             this.tru.Name = "tru";
             this.tru.Size = new System.Drawing.Size(30, 29);
             this.tru.TabIndex = 16;

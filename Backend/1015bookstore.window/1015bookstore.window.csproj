@@ -165,6 +165,12 @@
     <Compile Include="Business\CartAPIClient.cs" />
     <Compile Include="Business\FormFile.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
+    <Compile Include="CartPage\CartItemOOSUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CartPage\CartItemOOSUC.Designer.cs">
+      <DependentUpon>CartItemOOSUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="CartPage\CartItemUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -304,6 +310,9 @@
     <Compile Include="ViewModel\User\RegisterRequest.cs" />
     <Compile Include="ViewModel\User\UserUpdateRequest.cs" />
     <Compile Include="ViewModel\User\UserViewModel.cs" />
+    <EmbeddedResource Include="CartPage\CartItemOOSUC.resx">
+      <DependentUpon>CartItemOOSUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CartPage\CartUC.resx">
       <DependentUpon>CartUC.cs</DependentUpon>
     </EmbeddedResource>

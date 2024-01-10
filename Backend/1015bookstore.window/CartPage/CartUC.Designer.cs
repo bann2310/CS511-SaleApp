@@ -38,10 +38,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.hethang = new System.Windows.Forms.FlowLayoutPanel();
             this.totalUC1 = new _1015bookstore.window.CartPage.TotalUC();
-            this.cartItemUC1 = new _1015bookstore.window.CartPage.CartItemUC();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ngunghoatdong = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.hethang.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -132,11 +134,10 @@
             // 
             // hethang
             // 
-            this.hethang.Controls.Add(this.cartItemUC1);
             this.hethang.Location = new System.Drawing.Point(0, 320);
             this.hethang.Margin = new System.Windows.Forms.Padding(0);
             this.hethang.Name = "hethang";
-            this.hethang.Size = new System.Drawing.Size(900, 189);
+            this.hethang.Size = new System.Drawing.Size(900, 16);
             this.hethang.TabIndex = 1;
             // 
             // totalUC1
@@ -146,14 +147,33 @@
             this.totalUC1.Size = new System.Drawing.Size(410, 106);
             this.totalUC1.TabIndex = 2;
             // 
-            // cartItemUC1
+            // panel3
             // 
-            this.cartItemUC1.BackColor = System.Drawing.Color.White;
-            this.cartItemUC1.Location = new System.Drawing.Point(0, 10);
-            this.cartItemUC1.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.cartItemUC1.Name = "cartItemUC1";
-            this.cartItemUC1.Size = new System.Drawing.Size(900, 150);
-            this.cartItemUC1.TabIndex = 0;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Location = new System.Drawing.Point(0, 542);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(900, 50);
+            this.panel3.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
+            this.label5.Location = new System.Drawing.Point(30, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(308, 20);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Danh sách sản phẩm ngừng hoạt động";
+            // 
+            // ngunghoatdong
+            // 
+            this.ngunghoatdong.Location = new System.Drawing.Point(3, 589);
+            this.ngunghoatdong.Margin = new System.Windows.Forms.Padding(0);
+            this.ngunghoatdong.Name = "ngunghoatdong";
+            this.ngunghoatdong.Size = new System.Drawing.Size(897, 16);
+            this.ngunghoatdong.TabIndex = 1;
             // 
             // CartUC
             // 
@@ -161,8 +181,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.totalUC1);
+            this.Controls.Add(this.ngunghoatdong);
             this.Controls.Add(this.hethang);
             this.Controls.Add(this.giohang);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "CartUC";
@@ -171,7 +193,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.hethang.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -188,6 +211,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.FlowLayoutPanel hethang;
-        private CartItemUC cartItemUC1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.FlowLayoutPanel ngunghoatdong;
     }
 }
