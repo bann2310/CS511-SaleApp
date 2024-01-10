@@ -25,6 +25,7 @@ namespace _1015bookstore.window.MainPage.Informations
             this.user_id = user_id;
             _userAPIClient = new UserAPIClient();
             GetUserInformationAsync();
+
         }
         private async void GetUserInformationAsync()
         {
@@ -46,6 +47,8 @@ namespace _1015bookstore.window.MainPage.Informations
                 infordetail.BringToFront();
                 infordetail.Show();
 
+                this.Height = infordetail.Bottom + 20 + 400;
+
                 currentUC = infordetail;
             }
             else
@@ -54,19 +57,42 @@ namespace _1015bookstore.window.MainPage.Informations
             }
         }
     
-        private void GetUserAddress()
+        private async void GetUserAddress()
         {
             this.Controls.Remove(currentUC);
             currentUC = null;
 
             var addressUC = new InforAddress(user_id);
-            addressUC.Location = new Point(380, 30);
-            this.Controls.Add(addressUC);
-            addressUC.BringToFront();
-            addressUC.Show();
 
-            currentUC = addressUC;
+            addressUC.AddressLoadingCompleted += (sender, e) =>
+            {
+                addressUC.Location = new Point(380, 30);
+                this.Controls.Add(addressUC);
+                addressUC.BringToFront();
+                addressUC.Show();
 
+                this.Height = addressUC.Bottom + 20 + 400;
+
+                currentUC = addressUC;
+            };
+
+            await addressUC.LoadAddressAsync();
+
+        }
+
+        public void afterupdateaddress()
+        {
+            GetUserAddress();
+        }
+
+        public void aftercreateaddress()
+        {
+            GetUserAddress();
+        }
+
+        public void afterupdateinfor()
+        {
+            GetUserInformationAsync();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -83,13 +109,13 @@ namespace _1015bookstore.window.MainPage.Informations
         {
             Label label = sender as Label;
             label.ForeColor = Color.FromArgb(48, 207, 130);
-            label.Font = new Font("Roboto", 9, FontStyle.Bold);
+            label.Font = new Font("Roboto", 13, FontStyle.Bold);
         }
         private void Label_MouseLeave(object sender, EventArgs e)
         {
             Label label = sender as Label;
             label.ForeColor = Color.FromArgb(140, 140, 140);
-            label.Font = new Font("Roboto", 9, FontStyle.Regular);
+            label.Font = new Font("Roboto", 13, FontStyle.Regular);
         }
     }
 }

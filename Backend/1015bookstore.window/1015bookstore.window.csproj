@@ -166,25 +166,13 @@
     <Compile Include="Business\FormFile.cs" />
     <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
-    <Compile Include="CartPage\CartItemUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CartPage\CartItemUC.Designer.cs">
-      <DependentUpon>CartItemUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CartPage\CartUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CartPage\CartUC.Designer.cs">
-      <DependentUpon>CartUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CartPage\TotalUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CartPage\TotalUC.Designer.cs">
-      <DependentUpon>TotalUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Emun\CartStatus.cs" />
+    <Compile Include="InformationPage\AddressCreate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\AddressCreate.Designer.cs">
+      <DependentUpon>AddressCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="InformationPage\AddressDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -326,6 +314,9 @@
     <Compile Include="ViewModel\User\RegisterRequest.cs" />
     <Compile Include="ViewModel\User\UserUpdateRequest.cs" />
     <Compile Include="ViewModel\User\UserViewModel.cs" />
+    <EmbeddedResource Include="InformationPage\AddressCreate.resx">
+      <DependentUpon>AddressCreate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\AddressDetail.resx">
       <DependentUpon>AddressDetail.cs</DependentUpon>
     </EmbeddedResource>

@@ -7,46 +7,37 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _1015bookstore.window.InformationPage
 {
-    public partial class AddressUpdate : UserControl
+    public partial class AddressCreate : UserControl
     {
-        private AddressViewModel address;
+        private Guid user_id;
         private UserAddressAPIClient client;
-        public AddressUpdate(AddressViewModel address)
+        public AddressCreate(Guid user_id)
         {
             InitializeComponent();
-            this.address = address;
+            this.user_id = user_id;
             client = new UserAddressAPIClient();
-            SetData();
-        }
-
-        private void SetData()
-        {
-            ten.Text = address.receiver_name;
-            sdt.Text = address.receiver_phone;
-            tinhthanh.Text = address.city;
-            quanhuyen.Text = address.district;
-            phuongxa.Text = address.sub_district;
-            detail.Text = address.address_detail;
-            setdafault.Checked = address.is_default;
-            if (address.is_default )
-            {
-                setdafault.Enabled = false;
-            }
         }
 
         private void close_Click(object sender, EventArgs e)
         {
             var form = this.TopLevelControl as MainA;
-            form.close_updateaddress();
+            form.close_createaddress();
         }
 
-        private async void update()
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var form = this.TopLevelControl as MainA;
+            form.close_createaddress();
+        }
+
+        private async void create()
         {
             if (string.IsNullOrEmpty(ten.Text) || string.IsNullOrEmpty(sdt.Text) || string.IsNullOrEmpty(tinhthanh.Text) || string.IsNullOrEmpty(quanhuyen.Text) || string.IsNullOrEmpty(phuongxa.Text) || string.IsNullOrEmpty(detail.Text))
             {
@@ -55,9 +46,9 @@ namespace _1015bookstore.window.InformationPage
                 return;
             }
 
-            var request = new UserAddressRequestUpdate
+            var request = new UserAddressRequestCreate
             {
-                id = address.id,
+                user_id = user_id,
                 is_default = setdafault.Checked,
                 receiver_name = ten.Text,
                 receiver_phone = sdt.Text,
@@ -67,24 +58,23 @@ namespace _1015bookstore.window.InformationPage
                 address_detail = detail.Text,
             };
 
-            var response = await client.UpdateAddress(Properties.Settings.Default.session, request);
+            var response = await client.CreateAddress(Properties.Settings.Default.session, request);
 
             if (response.Status)
             {
                 var form = this.TopLevelControl as MainA;
-                form.close_updateaddress();
+                form.close_createaddress();
 
                 var inforpage = form.GetCurrentUC() as Information;
 
-                inforpage.afterupdateaddress();
+                inforpage.aftercreateaddress();
 
-                //form.afterupdateaddress();
-            }    
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            update();
+            create();
         }
     }
 }

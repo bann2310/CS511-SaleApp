@@ -16,5 +16,6 @@ namespace _1015bookstore.application.System.UserAddresses
         Task<ResponseService> Address_Update(UserAddressRequestUpdate request);
 
         Task<ResponseService<AddressViewModel>> Address_GetById(int id);
+        Task<ResponseService> Address_SetDefault(int id);
     }
 }
