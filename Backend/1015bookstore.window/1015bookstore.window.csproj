@@ -164,8 +164,27 @@
   <ItemGroup>
     <Compile Include="Business\CartAPIClient.cs" />
     <Compile Include="Business\FormFile.cs" />
+    <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
     <Compile Include="Emun\CartStatus.cs" />
+    <Compile Include="InformationPage\AddressDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\AddressDetail.Designer.cs">
+      <DependentUpon>AddressDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationPage\AddressUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\AddressUpdate.Designer.cs">
+      <DependentUpon>AddressUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationPage\InforAddress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\InforAddress.Designer.cs">
+      <DependentUpon>InforAddress.cs</DependentUpon>
+    </Compile>
     <Compile Include="InformationPage\InforDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -280,12 +299,24 @@
     <Compile Include="ViewModel\Catalog\Carts\CartAddProduct.cs" />
     <Compile Include="ViewModel\Catalog\Carts\CartViewModel.cs" />
     <Compile Include="ViewModel\ResponseAPI.cs" />
+    <Compile Include="ViewModel\UserAddress\AddressViewModel.cs" />
+    <Compile Include="ViewModel\UserAddress\UserAddressRequestCreate.cs" />
+    <Compile Include="ViewModel\UserAddress\UserAddressRequestUpdate.cs" />
     <Compile Include="ViewModel\User\ChangePasswordFPRequest.cs" />
     <Compile Include="ViewModel\User\ConfirmCodeFPRequest.cs" />
     <Compile Include="ViewModel\User\LoginRequest.cs" />
     <Compile Include="ViewModel\User\RegisterRequest.cs" />
     <Compile Include="ViewModel\User\UserUpdateRequest.cs" />
     <Compile Include="ViewModel\User\UserViewModel.cs" />
+    <EmbeddedResource Include="InformationPage\AddressDetail.resx">
+      <DependentUpon>AddressDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationPage\AddressUpdate.resx">
+      <DependentUpon>AddressUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationPage\InforAddress.resx">
+      <DependentUpon>InforAddress.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\InforDetail.resx">
       <DependentUpon>InforDetail.cs</DependentUpon>
     </EmbeddedResource>
