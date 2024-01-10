@@ -29,7 +29,7 @@ namespace _1015bookstore.window.ProductPage
             this.commentpanel.Controls.Add(review);
             this.commentpanel.Height += review.Height;
 
-            this.Height = commentpanel.Bottom + 50;
+            this.Height = commentpanel.Bottom + 10;
         }
     }
 }
