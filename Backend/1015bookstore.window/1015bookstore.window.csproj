@@ -326,7 +326,6 @@
     <Compile Include="ViewModel\User\RegisterRequest.cs" />
     <Compile Include="ViewModel\User\UserUpdateRequest.cs" />
     <Compile Include="ViewModel\User\UserViewModel.cs" />
-<<<<<<< HEAD
     <EmbeddedResource Include="InformationPage\AddressDetail.resx">
       <DependentUpon>AddressDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -335,16 +334,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\InforAddress.resx">
       <DependentUpon>InforAddress.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="CartPage\CartUC.resx">
-      <DependentUpon>CartUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CartPage\CartItemUC.resx">
-      <DependentUpon>CartItemUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CartPage\TotalUC.resx">
-      <DependentUpon>TotalUC.cs</DependentUpon>
->>>>>>> 4e54d32361df9230a53e75342d925460bc4635c9
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\InforDetail.resx">
       <DependentUpon>InforDetail.cs</DependentUpon>
