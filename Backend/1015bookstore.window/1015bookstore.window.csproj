@@ -256,6 +256,12 @@
     <Compile Include="ProductPage\ProductDetails.Designer.cs">
       <DependentUpon>ProductDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductPage\ProductPick\ProductPickUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductPage\ProductPick\ProductPickUC.Designer.cs">
+      <DependentUpon>ProductPickUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductPage\Reviews\ReviewDetailUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -324,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProductPage\ProductDetails.resx">
       <DependentUpon>ProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductPage\ProductPick\ProductPickUC.resx">
+      <DependentUpon>ProductPickUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductPage\Reviews\ReviewDetailUC.resx">
       <DependentUpon>ReviewDetailUC.cs</DependentUpon>
