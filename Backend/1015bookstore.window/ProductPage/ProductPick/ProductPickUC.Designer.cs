@@ -34,35 +34,34 @@
             this.label3 = new CSharp.Winform.UI.Label();
             this.product_avatar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.giaysale1 = new CSharp.Winform.UI.Label();
+            this.giaysale2 = new CSharp.Winform.UI.Label();
+            this.phutsale2 = new CSharp.Winform.UI.Label();
+            this.phutsale1 = new CSharp.Winform.UI.Label();
+            this.label18 = new CSharp.Winform.UI.Label();
+            this.giosale2 = new CSharp.Winform.UI.Label();
+            this.giosale1 = new CSharp.Winform.UI.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.soluongban = new CSharp.Winform.UI.Label();
             this.panel3 = new CSharp.Winform.UI.Panel();
+            this.soluongban = new CSharp.Winform.UI.Label();
+            this.label17 = new CSharp.Winform.UI.Label();
             this.giatien = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.giosale1 = new CSharp.Winform.UI.Label();
-            this.giosale2 = new CSharp.Winform.UI.Label();
-            this.phutsale1 = new CSharp.Winform.UI.Label();
-            this.phutsale2 = new CSharp.Winform.UI.Label();
-            this.giaysale2 = new CSharp.Winform.UI.Label();
-            this.giaysale1 = new CSharp.Winform.UI.Label();
-            this.label17 = new CSharp.Winform.UI.Label();
-            this.label18 = new CSharp.Winform.UI.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.tonkho = new System.Windows.Forms.Label();
             this.phiship = new System.Windows.Forms.Label();
             this.diachi = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.soluong = new CSharp.Winform.UI.Label();
-            this.button1 = new CSharp.Winform.UI.Button();
-            this.button2 = new CSharp.Winform.UI.Button();
+            this.tru = new CSharp.Winform.UI.Button();
+            this.cong = new CSharp.Winform.UI.Button();
             this.themvaogio = new CSharp.Winform.UI.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.muangay = new CSharp.Winform.UI.Button();
@@ -86,6 +85,7 @@
             this.nhacungcap = new System.Windows.Forms.Label();
             this.nhaxuatban = new System.Windows.Forms.Label();
             this.tacgia = new System.Windows.Forms.Label();
+            this.soluong = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.product_avatar)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -163,6 +163,90 @@
             this.panel1.Size = new System.Drawing.Size(850, 50);
             this.panel1.TabIndex = 3;
             // 
+            // giaysale1
+            // 
+            this.giaysale1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
+            this.giaysale1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.giaysale1.ForeColor = System.Drawing.Color.White;
+            this.giaysale1.Location = new System.Drawing.Point(298, 15);
+            this.giaysale1.Name = "giaysale1";
+            this.giaysale1.Size = new System.Drawing.Size(17, 20);
+            this.giaysale1.TabIndex = 1;
+            this.giaysale1.Text = "0";
+            this.giaysale1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // giaysale2
+            // 
+            this.giaysale2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
+            this.giaysale2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.giaysale2.ForeColor = System.Drawing.Color.White;
+            this.giaysale2.Location = new System.Drawing.Point(318, 15);
+            this.giaysale2.Name = "giaysale2";
+            this.giaysale2.Size = new System.Drawing.Size(17, 20);
+            this.giaysale2.TabIndex = 1;
+            this.giaysale2.Text = "0";
+            this.giaysale2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // phutsale2
+            // 
+            this.phutsale2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
+            this.phutsale2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phutsale2.ForeColor = System.Drawing.Color.White;
+            this.phutsale2.Location = new System.Drawing.Point(268, 15);
+            this.phutsale2.Name = "phutsale2";
+            this.phutsale2.Size = new System.Drawing.Size(17, 20);
+            this.phutsale2.TabIndex = 1;
+            this.phutsale2.Text = "0";
+            this.phutsale2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // phutsale1
+            // 
+            this.phutsale1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
+            this.phutsale1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phutsale1.ForeColor = System.Drawing.Color.White;
+            this.phutsale1.Location = new System.Drawing.Point(248, 15);
+            this.phutsale1.Name = "phutsale1";
+            this.phutsale1.Size = new System.Drawing.Size(17, 20);
+            this.phutsale1.TabIndex = 1;
+            this.phutsale1.Text = "0";
+            this.phutsale1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(284, 15);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(17, 20);
+            this.label18.TabIndex = 1;
+            this.label18.Text = ":";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // giosale2
+            // 
+            this.giosale2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
+            this.giosale2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.giosale2.ForeColor = System.Drawing.Color.White;
+            this.giosale2.Location = new System.Drawing.Point(218, 15);
+            this.giosale2.Name = "giosale2";
+            this.giosale2.Size = new System.Drawing.Size(17, 20);
+            this.giosale2.TabIndex = 1;
+            this.giosale2.Text = "0";
+            this.giosale2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // giosale1
+            // 
+            this.giosale1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
+            this.giosale1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.giosale1.ForeColor = System.Drawing.Color.White;
+            this.giosale1.Location = new System.Drawing.Point(198, 15);
+            this.giosale1.Name = "giosale1";
+            this.giosale1.Size = new System.Drawing.Size(17, 20);
+            this.giosale1.TabIndex = 1;
+            this.giosale1.Text = "0";
+            this.giosale1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -173,6 +257,16 @@
             this.label4.Size = new System.Drawing.Size(175, 34);
             this.label4.TabIndex = 0;
             this.label4.Text = "FLASH SALE";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(255)))), ((int)(((byte)(234)))));
+            this.panel3.Controls.Add(this.soluongban);
+            this.panel3.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.panel3.Location = new System.Drawing.Point(669, 15);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(171, 20);
+            this.panel3.TabIndex = 2;
             // 
             // soluongban
             // 
@@ -186,15 +280,17 @@
             this.soluongban.Text = "50 quyển đã bán";
             this.soluongban.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
+            // label17
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(255)))), ((int)(((byte)(234)))));
-            this.panel3.Controls.Add(this.soluongban);
-            this.panel3.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.panel3.Location = new System.Drawing.Point(669, 15);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(171, 20);
-            this.panel3.TabIndex = 2;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(234, 15);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(17, 20);
+            this.label17.TabIndex = 1;
+            this.label17.Text = ":";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // giatien
             // 
@@ -216,9 +312,8 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(136, 29);
             this.label9.TabIndex = 4;
-            this.label9.Text = "Tác giả:";
+            this.label9.Text = "Mã giảm giá:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label7
             // 
@@ -231,7 +326,6 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Giao hàng:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -244,7 +338,6 @@
             this.label8.TabIndex = 4;
             this.label8.Text = "Chính sách đổi trả:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -255,105 +348,8 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(136, 29);
             this.label10.TabIndex = 4;
-            this.label10.Text = "Tác giả:";
+            this.label10.Text = "Số lượng:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // giosale1
-            // 
-            this.giosale1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
-            this.giosale1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giosale1.ForeColor = System.Drawing.Color.White;
-            this.giosale1.Location = new System.Drawing.Point(198, 15);
-            this.giosale1.Name = "giosale1";
-            this.giosale1.Size = new System.Drawing.Size(17, 20);
-            this.giosale1.TabIndex = 1;
-            this.giosale1.Text = "0";
-            this.giosale1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // giosale2
-            // 
-            this.giosale2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
-            this.giosale2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giosale2.ForeColor = System.Drawing.Color.White;
-            this.giosale2.Location = new System.Drawing.Point(218, 15);
-            this.giosale2.Name = "giosale2";
-            this.giosale2.Size = new System.Drawing.Size(17, 20);
-            this.giosale2.TabIndex = 1;
-            this.giosale2.Text = "0";
-            this.giosale2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // phutsale1
-            // 
-            this.phutsale1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
-            this.phutsale1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phutsale1.ForeColor = System.Drawing.Color.White;
-            this.phutsale1.Location = new System.Drawing.Point(248, 15);
-            this.phutsale1.Name = "phutsale1";
-            this.phutsale1.Size = new System.Drawing.Size(17, 20);
-            this.phutsale1.TabIndex = 1;
-            this.phutsale1.Text = "0";
-            this.phutsale1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // phutsale2
-            // 
-            this.phutsale2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
-            this.phutsale2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phutsale2.ForeColor = System.Drawing.Color.White;
-            this.phutsale2.Location = new System.Drawing.Point(268, 15);
-            this.phutsale2.Name = "phutsale2";
-            this.phutsale2.Size = new System.Drawing.Size(17, 20);
-            this.phutsale2.TabIndex = 1;
-            this.phutsale2.Text = "0";
-            this.phutsale2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // giaysale2
-            // 
-            this.giaysale2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
-            this.giaysale2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giaysale2.ForeColor = System.Drawing.Color.White;
-            this.giaysale2.Location = new System.Drawing.Point(318, 15);
-            this.giaysale2.Name = "giaysale2";
-            this.giaysale2.Size = new System.Drawing.Size(17, 20);
-            this.giaysale2.TabIndex = 1;
-            this.giaysale2.Text = "0";
-            this.giaysale2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // giaysale1
-            // 
-            this.giaysale1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(52)))));
-            this.giaysale1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giaysale1.ForeColor = System.Drawing.Color.White;
-            this.giaysale1.Location = new System.Drawing.Point(298, 15);
-            this.giaysale1.Name = "giaysale1";
-            this.giaysale1.Size = new System.Drawing.Size(17, 20);
-            this.giaysale1.TabIndex = 1;
-            this.giaysale1.Text = "0";
-            this.giaysale1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(234, 15);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(17, 20);
-            this.label17.TabIndex = 1;
-            this.label17.Text = ":";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Roboto Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(284, 15);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(17, 20);
-            this.label18.TabIndex = 1;
-            this.label18.Text = ":";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
             // 
@@ -367,7 +363,6 @@
             this.label16.TabIndex = 4;
             this.label16.Text = "Mã miễn phí vận chuyển";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label16.Click += new System.EventHandler(this.label9_Click);
             // 
             // label19
             // 
@@ -381,7 +376,6 @@
             this.label19.TabIndex = 4;
             this.label19.Text = "Miễn phí vận chuyển đơn hàng trên 50.000đ";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label19.Click += new System.EventHandler(this.label9_Click);
             // 
             // pictureBox2
             // 
@@ -425,21 +419,19 @@
             this.label20.TabIndex = 4;
             this.label20.Text = "Giao hàng tới";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label20.Click += new System.EventHandler(this.label9_Click);
             // 
-            // label21
+            // tonkho
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.label21.Location = new System.Drawing.Point(804, 430);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(175, 20);
-            this.label21.TabIndex = 4;
-            this.label21.Text = "100 sản phẩm hiện có";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label21.Click += new System.EventHandler(this.label9_Click);
+            this.tonkho.AutoSize = true;
+            this.tonkho.BackColor = System.Drawing.Color.Transparent;
+            this.tonkho.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tonkho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.tonkho.Location = new System.Drawing.Point(804, 430);
+            this.tonkho.Name = "tonkho";
+            this.tonkho.Size = new System.Drawing.Size(175, 20);
+            this.tonkho.TabIndex = 4;
+            this.tonkho.Text = "100 sản phẩm hiện có";
+            this.tonkho.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // phiship
             // 
@@ -454,7 +446,6 @@
             this.phiship.TabIndex = 4;
             this.phiship.Text = "100.000đ";
             this.phiship.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.phiship.Click += new System.EventHandler(this.label9_Click);
             // 
             // diachi
             // 
@@ -468,7 +459,6 @@
             this.diachi.TabIndex = 4;
             this.diachi.Text = "Phường Linh Trung, Thành phố Thủ Đức";
             this.diachi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.diachi.Click += new System.EventHandler(this.label9_Click);
             // 
             // label24
             // 
@@ -482,44 +472,32 @@
             this.label24.TabIndex = 4;
             this.label24.Text = "Đổi trả sản phẩm trong 30 ngày";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label24.Click += new System.EventHandler(this.label9_Click);
             // 
-            // soluong
+            // tru
             // 
-            this.soluong.BackColor = System.Drawing.Color.Transparent;
-            this.soluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.soluong.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soluong.ForeColor = System.Drawing.Color.Black;
-            this.soluong.Location = new System.Drawing.Point(698, 425);
-            this.soluong.Name = "soluong";
-            this.soluong.Size = new System.Drawing.Size(59, 29);
-            this.soluong.TabIndex = 1;
-            this.soluong.Text = "7";
-            this.soluong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tru.BackColor = System.Drawing.Color.White;
+            this.tru.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tru.ForeColor = System.Drawing.Color.Black;
+            this.tru.Location = new System.Drawing.Point(666, 424);
+            this.tru.Name = "tru";
+            this.tru.Size = new System.Drawing.Size(30, 29);
+            this.tru.TabIndex = 6;
+            this.tru.Text = "-";
+            this.tru.UseVisualStyleBackColor = false;
+            this.tru.Click += new System.EventHandler(this.tru_Click);
             // 
-            // button1
+            // cong
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(666, 425);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 29);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "-";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(759, 425);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 29);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "+";
-            this.button2.UseVisualStyleBackColor = false;
+            this.cong.BackColor = System.Drawing.Color.White;
+            this.cong.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cong.ForeColor = System.Drawing.Color.Black;
+            this.cong.Location = new System.Drawing.Point(759, 424);
+            this.cong.Name = "cong";
+            this.cong.Size = new System.Drawing.Size(30, 29);
+            this.cong.TabIndex = 6;
+            this.cong.Text = "+";
+            this.cong.UseVisualStyleBackColor = false;
+            this.cong.Click += new System.EventHandler(this.cong_Click);
             // 
             // themvaogio
             // 
@@ -568,7 +546,6 @@
             this.label26.TabIndex = 4;
             this.label26.Text = "Phí giao hàng";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label26.Click += new System.EventHandler(this.label9_Click);
             // 
             // dathich
             // 
@@ -582,7 +559,6 @@
             this.dathich.TabIndex = 4;
             this.dathich.Text = "Đã thích (12)";
             this.dathich.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dathich.Click += new System.EventHandler(this.label9_Click);
             // 
             // pictureBox6
             // 
@@ -673,7 +649,7 @@
             this.danhgia.AutoSize = true;
             this.danhgia.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.danhgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
-            this.danhgia.Location = new System.Drawing.Point(447, 100);
+            this.danhgia.Location = new System.Drawing.Point(443, 100);
             this.danhgia.Name = "danhgia";
             this.danhgia.Size = new System.Drawing.Size(28, 15);
             this.danhgia.TabIndex = 0;
@@ -762,7 +738,6 @@
             this.nhacungcap.TabIndex = 4;
             this.nhacungcap.Text = "MCBooks";
             this.nhacungcap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.nhacungcap.Click += new System.EventHandler(this.label9_Click);
             // 
             // nhaxuatban
             // 
@@ -776,7 +751,6 @@
             this.nhaxuatban.TabIndex = 4;
             this.nhaxuatban.Text = "NXB ABC";
             this.nhaxuatban.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.nhaxuatban.Click += new System.EventHandler(this.label9_Click);
             // 
             // tacgia
             // 
@@ -790,13 +764,24 @@
             this.tacgia.TabIndex = 4;
             this.tacgia.Text = "ABC";
             this.tacgia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tacgia.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // soluong
+            // 
+            this.soluong.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soluong.Location = new System.Drawing.Point(698, 425);
+            this.soluong.Name = "soluong";
+            this.soluong.Size = new System.Drawing.Size(59, 32);
+            this.soluong.TabIndex = 14;
+            this.soluong.Text = "1";
+            this.soluong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.soluong.TextChanged += new System.EventHandler(this.soluong_TextChanged);
             // 
             // ProductPickUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.soluong);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label35);
@@ -808,9 +793,8 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.soluong);
+            this.Controls.Add(this.cong);
+            this.Controls.Add(this.tru);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
@@ -820,7 +804,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dathich);
-            this.Controls.Add(this.label21);
+            this.Controls.Add(this.tonkho);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
@@ -893,13 +877,12 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label tonkho;
         private System.Windows.Forms.Label phiship;
         private System.Windows.Forms.Label diachi;
         private System.Windows.Forms.Label label24;
-        private CSharp.Winform.UI.Label soluong;
-        private CSharp.Winform.UI.Button button1;
-        private CSharp.Winform.UI.Button button2;
+        private CSharp.Winform.UI.Button tru;
+        private CSharp.Winform.UI.Button cong;
         private CSharp.Winform.UI.Button themvaogio;
         private System.Windows.Forms.PictureBox pictureBox5;
         private CSharp.Winform.UI.Button muangay;
@@ -923,5 +906,6 @@
         private System.Windows.Forms.Label nhacungcap;
         private System.Windows.Forms.Label nhaxuatban;
         private System.Windows.Forms.Label tacgia;
+        private System.Windows.Forms.TextBox soluong;
     }
 }

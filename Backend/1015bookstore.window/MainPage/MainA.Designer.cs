@@ -44,6 +44,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.body = new System.Windows.Forms.Panel();
+            this.productPickUC1 = new _1015bookstore.window.ProductPage.ProductPick.ProductPickUC();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -52,6 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.body.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroPanel1
@@ -265,11 +267,20 @@
             // 
             this.body.AutoScroll = true;
             this.body.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.body.Controls.Add(this.productPickUC1);
             this.body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.body.Location = new System.Drawing.Point(0, 80);
             this.body.Name = "body";
             this.body.Size = new System.Drawing.Size(1462, 922);
             this.body.TabIndex = 2;
+            // 
+            // productPickUC1
+            // 
+            this.productPickUC1.BackColor = System.Drawing.Color.White;
+            this.productPickUC1.Location = new System.Drawing.Point(12, 311);
+            this.productPickUC1.Name = "productPickUC1";
+            this.productPickUC1.Size = new System.Drawing.Size(1350, 580);
+            this.productPickUC1.TabIndex = 0;
             // 
             // MainA
             // 
@@ -295,6 +306,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.body.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -316,5 +328,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel body;
+        private ProductPage.ProductPick.ProductPickUC productPickUC1;
     }
 }
