@@ -22,6 +22,7 @@ namespace _1015bookstore.window
         UserControl infor;
         UserControl currentUC;
         UserControl updateAddressOpen;
+        UserControl createAddressOpen;
         public MainA()
         {
             InitializeComponent();
@@ -44,6 +45,11 @@ namespace _1015bookstore.window
         {
             Properties.Settings.Default.Reset();
             Application.Exit();
+        }
+
+        public UserControl GetCurrentUC()
+        {
+            return currentUC;
         }
 
         #region Login
@@ -180,6 +186,23 @@ namespace _1015bookstore.window
         }
         #endregion
 
+        #region CreateAddress
+        public void open_createaddress(Guid user_id)
+        {
+            var createaddressUC = new AddressCreate(user_id);
+            this.Controls.Add(createaddressUC);
+            createaddressUC.Location = new Point(440, 140);
+            createaddressUC.BringToFront();
+            createaddressUC.Show();
+
+            createAddressOpen = createaddressUC;
+        }
+        public void close_createaddress()
+        {
+            this.Controls.Remove(createAddressOpen);
+        }
+        #endregion
+
         #region UpdateAddress
         public void open_updateaddress(AddressViewModel address)
         {
@@ -221,6 +244,13 @@ namespace _1015bookstore.window
                 currentUC = page;
             }    
            
+        }
+        #endregion
+
+        #region returnHomePage
+        private void returnHomePage(object sender, EventArgs e)
+        {
+            homepage();
         }
         #endregion
     }

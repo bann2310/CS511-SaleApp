@@ -141,5 +141,23 @@ namespace _1015bookstore.application.System.UserAddresses
             };
 
         }
+    
+        public async Task<ResponseService> Address_SetDefault(int id)
+        {
+            var addresses = await _context.UserAddresses.FirstOrDefaultAsync(a => a.id == id);
+            
+            var address_default = await _context.UserAddresses.FirstOrDefaultAsync(x => x.user_id == addresses.user_id && x.is_default == true);
+            address_default.is_default = false;
+            
+            addresses.is_default = true;
+
+            await _context.SaveChangesAsync();
+            return new ResponseService
+            {
+                CodeStatus = 200,
+                Status = true,
+                Message = $"Success"
+            };
+        }
     }
 }
