@@ -28,8 +28,13 @@ namespace _1015bookstore.window.MainPage.Informations
         }
         private async void GetUserInformationAsync()
         {
-            var session = Properties.Settings.Default.session;
-            var userResponse = await _userAPIClient.GetUserById(session, user_id);
+            if (currentUC != null)
+            { 
+                this.Controls.Remove(currentUC);
+                currentUC = null;
+            }
+
+            var userResponse = await _userAPIClient.GetUserById(Properties.Settings.Default.session, user_id);
 
             if (userResponse.Status)
             {
@@ -47,6 +52,44 @@ namespace _1015bookstore.window.MainPage.Informations
             {
                 MessageBox.Show($"Error: {userResponse.Message}");
             }
+        }
+    
+        private void GetUserAddress()
+        {
+            this.Controls.Remove(currentUC);
+            currentUC = null;
+
+            var addressUC = new InforAddress(user_id);
+            addressUC.Location = new Point(380, 30);
+            this.Controls.Add(addressUC);
+            addressUC.BringToFront();
+            addressUC.Show();
+
+            currentUC = addressUC;
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            GetUserInformationAsync();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            GetUserAddress();
+        }
+
+        private void Label_MouseHover(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            label.ForeColor = Color.FromArgb(48, 207, 130);
+            label.Font = new Font("Roboto", 9, FontStyle.Bold);
+        }
+        private void Label_MouseLeave(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            label.ForeColor = Color.FromArgb(140, 140, 140);
+            label.Font = new Font("Roboto", 9, FontStyle.Regular);
         }
     }
 }

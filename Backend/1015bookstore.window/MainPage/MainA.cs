@@ -1,7 +1,9 @@
-﻿using _1015bookstore.window.Main;
+﻿using _1015bookstore.window.InformationPage;
+using _1015bookstore.window.Main;
 using _1015bookstore.window.MainPage;
 using _1015bookstore.window.MainPage.Informations;
 using _1015bookstore.window.MainPage.MainProduct;
+using _1015bookstore.window.ViewModel.UserAddresses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +21,7 @@ namespace _1015bookstore.window
         UserControl cart;
         UserControl infor;
         UserControl currentUC;
+        UserControl updateAddressOpen;
         public MainA()
         {
             InitializeComponent();
@@ -174,6 +177,23 @@ namespace _1015bookstore.window
             currentUC = page;
 
             
+        }
+        #endregion
+
+        #region UpdateAddress
+        public void open_updateaddress(AddressViewModel address)
+        {
+            var updateaddressUC = new AddressUpdate(address);
+            this.Controls.Add(updateaddressUC);
+            updateaddressUC.Location = new Point(440, 140);
+            updateaddressUC.BringToFront();
+            updateaddressUC.Show();
+
+            updateAddressOpen = updateaddressUC;
+        }
+        public void close_updateaddress()
+        {
+            this.Controls.Remove(updateAddressOpen);
         }
         #endregion
 
