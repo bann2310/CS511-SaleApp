@@ -36,20 +36,20 @@
             this.chontatca = new System.Windows.Forms.CheckBox();
             this.giohang = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.xoaOOS = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.hethang = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.xoaOOService = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.ngunghoatdong = new System.Windows.Forms.FlowLayoutPanel();
             this.totalUC1 = new _1015bookstore.window.CartPage.TotalUC();
-            this.xoaOOS = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.xoaOOService = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xoaOOS)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xoaOOService)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,9 +72,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.label3.Location = new System.Drawing.Point(756, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 18);
+            this.label3.Size = new System.Drawing.Size(78, 18);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Tên sản phẩm";
+            this.label3.Text = "Thành tiền";
             // 
             // label2
             // 
@@ -130,6 +130,27 @@
             this.panel2.Size = new System.Drawing.Size(900, 50);
             this.panel2.TabIndex = 0;
             // 
+            // xoaOOS
+            // 
+            this.xoaOOS.Image = ((System.Drawing.Image)(resources.GetObject("xoaOOS.Image")));
+            this.xoaOOS.Location = new System.Drawing.Point(866, 13);
+            this.xoaOOS.Name = "xoaOOS";
+            this.xoaOOS.Size = new System.Drawing.Size(24, 24);
+            this.xoaOOS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.xoaOOS.TabIndex = 2;
+            this.xoaOOS.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(19)))), ((int)(((byte)(34)))));
+            this.label6.Location = new System.Drawing.Point(797, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 18);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Bỏ tất cả";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -160,53 +181,6 @@
             this.panel3.Size = new System.Drawing.Size(900, 50);
             this.panel3.TabIndex = 0;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
-            this.label5.Location = new System.Drawing.Point(30, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(308, 20);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Danh sách sản phẩm ngừng hoạt động";
-            // 
-            // ngunghoatdong
-            // 
-            this.ngunghoatdong.Location = new System.Drawing.Point(3, 589);
-            this.ngunghoatdong.Margin = new System.Windows.Forms.Padding(0);
-            this.ngunghoatdong.Name = "ngunghoatdong";
-            this.ngunghoatdong.Size = new System.Drawing.Size(897, 16);
-            this.ngunghoatdong.TabIndex = 1;
-            // 
-            // totalUC1
-            // 
-            this.totalUC1.Location = new System.Drawing.Point(925, 16);
-            this.totalUC1.Name = "totalUC1";
-            this.totalUC1.Size = new System.Drawing.Size(410, 106);
-            this.totalUC1.TabIndex = 2;
-            // 
-            // xoaOOS
-            // 
-            this.xoaOOS.Image = ((System.Drawing.Image)(resources.GetObject("xoaOOS.Image")));
-            this.xoaOOS.Location = new System.Drawing.Point(866, 13);
-            this.xoaOOS.Name = "xoaOOS";
-            this.xoaOOS.Size = new System.Drawing.Size(24, 24);
-            this.xoaOOS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.xoaOOS.TabIndex = 2;
-            this.xoaOOS.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(19)))), ((int)(((byte)(34)))));
-            this.label6.Location = new System.Drawing.Point(797, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 18);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Bỏ tất cả";
-            // 
             // xoaOOService
             // 
             this.xoaOOService.Image = ((System.Drawing.Image)(resources.GetObject("xoaOOService.Image")));
@@ -228,6 +202,33 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Bỏ tất cả";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
+            this.label5.Location = new System.Drawing.Point(30, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(308, 20);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Danh sách sản phẩm ngừng hoạt động";
+            // 
+            // ngunghoatdong
+            // 
+            this.ngunghoatdong.Location = new System.Drawing.Point(3, 589);
+            this.ngunghoatdong.Margin = new System.Windows.Forms.Padding(0);
+            this.ngunghoatdong.Name = "ngunghoatdong";
+            this.ngunghoatdong.Size = new System.Drawing.Size(897, 16);
+            this.ngunghoatdong.TabIndex = 1;
+            // 
+            // totalUC1
+            // 
+            this.totalUC1.BackColor = System.Drawing.Color.White;
+            this.totalUC1.Location = new System.Drawing.Point(925, 16);
+            this.totalUC1.Name = "totalUC1";
+            this.totalUC1.Size = new System.Drawing.Size(410, 106);
+            this.totalUC1.TabIndex = 2;
+            // 
             // CartUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -246,9 +247,9 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xoaOOS)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xoaOOS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xoaOOService)).EndInit();
             this.ResumeLayout(false);
 
