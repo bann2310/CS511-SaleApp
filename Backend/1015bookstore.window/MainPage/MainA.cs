@@ -5,6 +5,7 @@ using _1015bookstore.window.MainPage;
 using _1015bookstore.window.MainPage.Catemini;
 using _1015bookstore.window.MainPage.Informations;
 using _1015bookstore.window.MainPage.MainProduct;
+using _1015bookstore.window.ProductPage;
 using _1015bookstore.window.ProductPage.ProductCateAndSearch;
 using _1015bookstore.window.ViewModel.Catalog.Products;
 using _1015bookstore.window.ViewModel.UserAddresses;
@@ -17,6 +18,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace _1015bookstore.window
 {
@@ -308,7 +310,23 @@ namespace _1015bookstore.window
             page.Show();
 
             currentUC = page;
-        }    
+        }
+        #endregion
+
+        #region ProductViewPage
+
+        public void ProductViewPage(ProductViewModel product)
+        {
+            body.Controls.Remove(currentUC);
+
+            var page = new ProductViewPage(product);
+            body.Controls.Add(page);
+            page.Location = new Point(0, 0);
+            page.Show();
+
+            currentUC = page;
+        }
+
         #endregion
     }
 }

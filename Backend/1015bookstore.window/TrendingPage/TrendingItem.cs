@@ -23,16 +23,10 @@ namespace _1015bookstore.window.TrendingPage
             this.product = product;
             SetPicture();
             SetPrice();
-            SetName(); SetCountBuy(); SetFlashSalse();
+            SetName(); SetCountBuy();
         }
 
-        private void SetFlashSalse()
-        {
-            if (product.bProduct_flashsale)
-            {
-                label2.Visible = true;
-            }    
-        }    
+       
 
         private void SetPicture()
         {
@@ -52,7 +46,7 @@ namespace _1015bookstore.window.TrendingPage
         }
         private void SetPrice()
         {
-            dongia.Text = product.vProduct_price.ToString();
+            dongia.Text = String.Format("{0:0.##}", product.vProduct_price) + " đ";
         }
         private void SetName()
         {
@@ -87,5 +81,35 @@ namespace _1015bookstore.window.TrendingPage
             buy.Text = product.iProduct_buy_count.ToString();
         }
 
+        private void ProductViewPage()
+        {
+            var form = this.TopLevelControl as MainA;
+            form.ProductViewPage(product);
+        }
+
+        private void avatar_Click(object sender, EventArgs e)
+        {
+            ProductViewPage();
+        }
+
+        private void tensanpham_Click(object sender, EventArgs e)
+        {
+            ProductViewPage();
+        }
+
+        private void dongia_Click(object sender, EventArgs e)
+        {
+            ProductViewPage();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            ProductViewPage();
+        }
+
+        private void buy_Click(object sender, EventArgs e)
+        {
+            ProductViewPage();
+        }
     }
 }

@@ -55,7 +55,7 @@ namespace _1015bookstore.window.MainPage
             }
             else
             {
-                string url = filepath + picture_;
+                string url = Path.Combine(filepath, picture_);
                 Image image = Image.FromFile(url);
                 pic.Image = image;
             }

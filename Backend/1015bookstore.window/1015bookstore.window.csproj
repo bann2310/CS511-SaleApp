@@ -166,6 +166,7 @@
     <Compile Include="Business\CategoryAPIClient.cs" />
     <Compile Include="Business\FormFile.cs" />
     <Compile Include="Business\ProductAPIClient.cs" />
+    <Compile Include="Business\ReviewAPIClient.cs" />
     <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
     <Compile Include="Emun\CartStatus.cs" />
@@ -340,6 +341,12 @@
     <Compile Include="ProductPage\ProductPick\ProductPickUC.Designer.cs">
       <DependentUpon>ProductPickUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductPage\ProductViewPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductPage\ProductViewPage.Designer.cs">
+      <DependentUpon>ProductViewPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductPage\Reviews\ReviewDetailUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -372,6 +379,7 @@
     <Compile Include="ViewModel\Catalog\Categories\CategoryParentAndChildViewModel.cs" />
     <Compile Include="ViewModel\Catalog\Categories\CategoryViewModel.cs" />
     <Compile Include="ViewModel\Catalog\Products\ProductViewModel.cs" />
+    <Compile Include="ViewModel\Catalog\Reviews\ReviewViewModel.cs" />
     <Compile Include="ViewModel\ResponseAPI.cs" />
     <Compile Include="ViewModel\UserAddress\AddressViewModel.cs" />
     <Compile Include="ViewModel\UserAddress\UserAddressRequestCreate.cs" />
@@ -465,6 +473,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProductPage\ProductPick\ProductPickUC.resx">
       <DependentUpon>ProductPickUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductPage\ProductViewPage.resx">
+      <DependentUpon>ProductViewPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductPage\Reviews\ReviewDetailUC.resx">
       <DependentUpon>ReviewDetailUC.cs</DependentUpon>
