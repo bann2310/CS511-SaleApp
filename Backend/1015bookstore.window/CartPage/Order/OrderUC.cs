@@ -17,10 +17,6 @@ namespace _1015bookstore.window.CartPage.Payment
         public OrderUC()
         {
             InitializeComponent();
-            for(int i = 0; i < 5; i++) 
-            {
-                addorder();
-            }
         }
 
         private void voucher_TextChanged(object sender, EventArgs e)
@@ -47,15 +43,6 @@ namespace _1015bookstore.window.CartPage.Payment
 
         }
 
-        private void addorder()
-        {
-            OrderItemUC item = new OrderItemUC();
-            this.order.Controls.Add(item);
-            this.order.Height += item.Height;
-
-            voucher_panel.Location = new Point(0, order.Bottom + 10);
-            total_panel.Location = new Point(0, voucher_panel.Bottom + 10);
-            this.Height = total_panel.Bottom;
-        }
+       
     }
 }

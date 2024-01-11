@@ -10,7 +10,7 @@ namespace _1015bookstore.window.ViewModel.Catalog.Orders
     {
         public int iProduct_id { get; set; }
         public string sProduct_name { get; set; }
-        public string? sImage_path { get; set; }
+        public string sImage_path { get; set; }
         public int iProduct_amount { get; set; }
         public Decimal vProduct_price { get; set; }
     }

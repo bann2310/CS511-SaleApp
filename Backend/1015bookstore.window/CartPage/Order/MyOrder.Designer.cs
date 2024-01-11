@@ -66,6 +66,40 @@
             this.panel1 = new CSharp.Winform.UI.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.diachicuthe = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.doidiachi = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.sodienthoai = new System.Windows.Forms.Label();
+            this.tinhthanh = new System.Windows.Forms.Label();
+            this.hoten = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.order_panel = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.voucher_panel = new System.Windows.Forms.Panel();
+            this.error = new CSharp.Winform.UI.Label();
+            this.apdungvoucher = new CSharp.Winform.UI.Button();
+            this.label32 = new System.Windows.Forms.Label();
+            this.voucher = new System.Windows.Forms.TextBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.total_panel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dathang = new CSharp.Winform.UI.Button();
+            this.tongtien = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.tiengiamgia = new System.Windows.Forms.Label();
+            this.tienvanchuyen = new System.Windows.Forms.Label();
+            this.tienhang = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -79,6 +113,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.order_panel.SuspendLayout();
+            this.voucher_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.total_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroPanel2
@@ -595,11 +636,440 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Bookstore";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.diachicuthe);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.doidiachi);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.sodienthoai);
+            this.panel2.Controls.Add(this.tinhthanh);
+            this.panel2.Controls.Add(this.hoten);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(160, 26);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1080, 117);
+            this.panel2.TabIndex = 4;
+            // 
+            // diachicuthe
+            // 
+            this.diachicuthe.AutoSize = true;
+            this.diachicuthe.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diachicuthe.ForeColor = System.Drawing.Color.Black;
+            this.diachicuthe.Location = new System.Drawing.Point(444, 50);
+            this.diachicuthe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.diachicuthe.Name = "diachicuthe";
+            this.diachicuthe.Size = new System.Drawing.Size(447, 19);
+            this.diachicuthe.TabIndex = 4;
+            this.diachicuthe.Text = "Kí Túc Xá Khu A Đại Học Quốc Gia Tp. Hcm, Đường Tạ Quang Bửu";
+            this.diachicuthe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(73, 17);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // doidiachi
+            // 
+            this.doidiachi.AutoSize = true;
+            this.doidiachi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.doidiachi.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doidiachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.doidiachi.Location = new System.Drawing.Point(1006, 13);
+            this.doidiachi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.doidiachi.Name = "doidiachi";
+            this.doidiachi.Size = new System.Drawing.Size(56, 15);
+            this.doidiachi.TabIndex = 2;
+            this.doidiachi.Text = "Thay đổi ";
+            this.doidiachi.Click += new System.EventHandler(this.doidiachi_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(419, 17);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // sodienthoai
+            // 
+            this.sodienthoai.AutoSize = true;
+            this.sodienthoai.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sodienthoai.ForeColor = System.Drawing.Color.Black;
+            this.sodienthoai.Location = new System.Drawing.Point(98, 77);
+            this.sodienthoai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.sodienthoai.Name = "sodienthoai";
+            this.sodienthoai.Size = new System.Drawing.Size(99, 19);
+            this.sodienthoai.TabIndex = 2;
+            this.sodienthoai.Text = "0388565194";
+            // 
+            // tinhthanh
+            // 
+            this.tinhthanh.AutoSize = true;
+            this.tinhthanh.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tinhthanh.ForeColor = System.Drawing.Color.Black;
+            this.tinhthanh.Location = new System.Drawing.Point(443, 77);
+            this.tinhthanh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tinhthanh.Name = "tinhthanh";
+            this.tinhthanh.Size = new System.Drawing.Size(388, 19);
+            this.tinhthanh.TabIndex = 2;
+            this.tinhthanh.Text = "Phường Linh Trung, Thành Phố Thủ Đức, TP. Hồ Chí Minh";
+            this.tinhthanh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // hoten
+            // 
+            this.hoten.AutoSize = true;
+            this.hoten.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoten.ForeColor = System.Drawing.Color.Black;
+            this.hoten.Location = new System.Drawing.Point(98, 50);
+            this.hoten.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.hoten.Name = "hoten";
+            this.hoten.Size = new System.Drawing.Size(208, 19);
+            this.hoten.TabIndex = 2;
+            this.hoten.Text = "Nguyễn Tấn Trần Minh Khang";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
+            this.label2.Location = new System.Drawing.Point(97, 13);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Người nhận";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
+            this.label3.Location = new System.Drawing.Point(443, 13);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(165, 24);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Địa chỉ nhận hàng";
+            // 
+            // order_panel
+            // 
+            this.order_panel.BackColor = System.Drawing.Color.White;
+            this.order_panel.Controls.Add(this.label28);
+            this.order_panel.Controls.Add(this.label29);
+            this.order_panel.Controls.Add(this.label30);
+            this.order_panel.Controls.Add(this.label31);
+            this.order_panel.Location = new System.Drawing.Point(160, 156);
+            this.order_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.order_panel.Name = "order_panel";
+            this.order_panel.Size = new System.Drawing.Size(1080, 40);
+            this.order_panel.TabIndex = 5;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label28.Location = new System.Drawing.Point(932, 10);
+            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(79, 19);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "Thành tiền";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label29.Location = new System.Drawing.Point(575, 10);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(61, 19);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "Đơn giá";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label30.Location = new System.Drawing.Point(803, 10);
+            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(69, 19);
+            this.label30.TabIndex = 2;
+            this.label30.Text = "Số lượng";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label31.Location = new System.Drawing.Point(145, 10);
+            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(75, 19);
+            this.label31.TabIndex = 2;
+            this.label31.Text = "Sản phẩm";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(160, 212);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1080, 135);
+            this.flowLayoutPanel1.TabIndex = 6;
+            // 
+            // voucher_panel
+            // 
+            this.voucher_panel.BackColor = System.Drawing.Color.White;
+            this.voucher_panel.Controls.Add(this.error);
+            this.voucher_panel.Controls.Add(this.apdungvoucher);
+            this.voucher_panel.Controls.Add(this.label32);
+            this.voucher_panel.Controls.Add(this.voucher);
+            this.voucher_panel.Controls.Add(this.pictureBox15);
+            this.voucher_panel.Location = new System.Drawing.Point(161, 365);
+            this.voucher_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.voucher_panel.Name = "voucher_panel";
+            this.voucher_panel.Size = new System.Drawing.Size(1079, 55);
+            this.voucher_panel.TabIndex = 7;
+            // 
+            // error
+            // 
+            this.error.AutoSize = true;
+            this.error.BackColor = System.Drawing.Color.Transparent;
+            this.error.Cursor = System.Windows.Forms.Cursors.Default;
+            this.error.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.error.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(67)))), ((int)(((byte)(48)))));
+            this.error.Location = new System.Drawing.Point(562, 21);
+            this.error.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.error.Name = "error";
+            this.error.Size = new System.Drawing.Size(82, 14);
+            this.error.TabIndex = 15;
+            this.error.Text = "Đăng ký tại đây";
+            this.error.Visible = false;
+            // 
+            // apdungvoucher
+            // 
+            this.apdungvoucher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
+            this.apdungvoucher.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.apdungvoucher.ForeColor = System.Drawing.Color.White;
+            this.apdungvoucher.Location = new System.Drawing.Point(446, 14);
+            this.apdungvoucher.Margin = new System.Windows.Forms.Padding(2);
+            this.apdungvoucher.Name = "apdungvoucher";
+            this.apdungvoucher.Size = new System.Drawing.Size(112, 26);
+            this.apdungvoucher.TabIndex = 7;
+            this.apdungvoucher.Text = "Áp dụng";
+            this.apdungvoucher.UseVisualStyleBackColor = false;
+            this.apdungvoucher.Click += new System.EventHandler(this.apdungvoucher_Click);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
+            this.label32.Location = new System.Drawing.Point(52, 14);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(114, 24);
+            this.label32.TabIndex = 4;
+            this.label32.Text = "Mã Voucher";
+            // 
+            // voucher
+            // 
+            this.voucher.BackColor = System.Drawing.Color.White;
+            this.voucher.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voucher.Location = new System.Drawing.Point(180, 14);
+            this.voucher.Margin = new System.Windows.Forms.Padding(2);
+            this.voucher.Name = "voucher";
+            this.voucher.Size = new System.Drawing.Size(248, 27);
+            this.voucher.TabIndex = 5;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(24, 17);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 3;
+            this.pictureBox15.TabStop = false;
+            // 
+            // total_panel
+            // 
+            this.total_panel.BackColor = System.Drawing.Color.White;
+            this.total_panel.Controls.Add(this.panel3);
+            this.total_panel.Controls.Add(this.dathang);
+            this.total_panel.Controls.Add(this.tongtien);
+            this.total_panel.Controls.Add(this.label33);
+            this.total_panel.Controls.Add(this.label34);
+            this.total_panel.Controls.Add(this.label35);
+            this.total_panel.Controls.Add(this.label36);
+            this.total_panel.Controls.Add(this.tiengiamgia);
+            this.total_panel.Controls.Add(this.tienvanchuyen);
+            this.total_panel.Controls.Add(this.tienhang);
+            this.total_panel.Controls.Add(this.label38);
+            this.total_panel.Location = new System.Drawing.Point(161, 440);
+            this.total_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.total_panel.Name = "total_panel";
+            this.total_panel.Size = new System.Drawing.Size(1079, 128);
+            this.total_panel.TabIndex = 8;
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Location = new System.Drawing.Point(393, 16);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1, 96);
+            this.panel3.TabIndex = 24;
+            // 
+            // dathang
+            // 
+            this.dathang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
+            this.dathang.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dathang.ForeColor = System.Drawing.Color.White;
+            this.dathang.Location = new System.Drawing.Point(868, 27);
+            this.dathang.Margin = new System.Windows.Forms.Padding(2);
+            this.dathang.Name = "dathang";
+            this.dathang.Size = new System.Drawing.Size(144, 40);
+            this.dathang.TabIndex = 7;
+            this.dathang.Text = "Đặt hàng";
+            this.dathang.UseVisualStyleBackColor = false;
+            this.dathang.Click += new System.EventHandler(this.dathang_Click);
+            // 
+            // tongtien
+            // 
+            this.tongtien.AutoSize = true;
+            this.tongtien.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tongtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(130)))));
+            this.tongtien.Location = new System.Drawing.Point(544, 47);
+            this.tongtien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tongtien.Name = "tongtien";
+            this.tongtien.Size = new System.Drawing.Size(118, 29);
+            this.tongtien.TabIndex = 23;
+            this.tongtien.Text = "653.100đ";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label33.Location = new System.Drawing.Point(415, 55);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(113, 18);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "Tổng thanh toán";
+            // 
+            // label34
+            // 
+            this.label34.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label34.Location = new System.Drawing.Point(750, 77);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(262, 35);
+            this.label34.TabIndex = 2;
+            this.label34.Text = "Nhấn \"Đặt hàng\" đồng nghĩa với việc bạn đồng ý tuân theo điều khoản của chúng tôi" +
+    ".\r\n\r\n";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label35.Location = new System.Drawing.Point(21, 82);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(119, 18);
+            this.label35.TabIndex = 2;
+            this.label35.Text = "Voucher giảm giá";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label36.Location = new System.Drawing.Point(21, 54);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(104, 18);
+            this.label36.TabIndex = 2;
+            this.label36.Text = "Phí vận chuyển";
+            // 
+            // tiengiamgia
+            // 
+            this.tiengiamgia.AutoSize = true;
+            this.tiengiamgia.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tiengiamgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.tiengiamgia.Location = new System.Drawing.Point(183, 82);
+            this.tiengiamgia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tiengiamgia.Name = "tiengiamgia";
+            this.tiengiamgia.Size = new System.Drawing.Size(29, 18);
+            this.tiengiamgia.TabIndex = 2;
+            this.tiengiamgia.Text = "-0đ";
+            // 
+            // tienvanchuyen
+            // 
+            this.tienvanchuyen.AutoSize = true;
+            this.tienvanchuyen.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tienvanchuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.tienvanchuyen.Location = new System.Drawing.Point(183, 54);
+            this.tienvanchuyen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tienvanchuyen.Name = "tienvanchuyen";
+            this.tienvanchuyen.Size = new System.Drawing.Size(59, 18);
+            this.tienvanchuyen.TabIndex = 2;
+            this.tienvanchuyen.Text = "30000 đ";
+            // 
+            // tienhang
+            // 
+            this.tienhang.AutoSize = true;
+            this.tienhang.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tienhang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.tienhang.Location = new System.Drawing.Point(183, 27);
+            this.tienhang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tienhang.Name = "tienhang";
+            this.tienhang.Size = new System.Drawing.Size(68, 18);
+            this.tienhang.TabIndex = 2;
+            this.tienhang.Text = "620.000đ";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label38.Location = new System.Drawing.Point(21, 27);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(104, 18);
+            this.label38.TabIndex = 2;
+            this.label38.Text = "Tổng tiền hàng";
+            // 
             // MyOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.total_panel);
+            this.Controls.Add(this.voucher_panel);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.order_panel);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.metroPanel2);
             this.Name = "MyOrder";
             this.Size = new System.Drawing.Size(1440, 1440);
@@ -617,6 +1087,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.order_panel.ResumeLayout(false);
+            this.order_panel.PerformLayout();
+            this.voucher_panel.ResumeLayout(false);
+            this.voucher_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.total_panel.ResumeLayout(false);
+            this.total_panel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -660,5 +1141,39 @@
         private CSharp.Winform.UI.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label diachicuthe;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label doidiachi;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label sodienthoai;
+        private System.Windows.Forms.Label tinhthanh;
+        private System.Windows.Forms.Label hoten;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel order_panel;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel voucher_panel;
+        private CSharp.Winform.UI.Button apdungvoucher;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox voucher;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Panel total_panel;
+        private System.Windows.Forms.Panel panel3;
+        private CSharp.Winform.UI.Button dathang;
+        private System.Windows.Forms.Label tongtien;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label tiengiamgia;
+        private System.Windows.Forms.Label tienvanchuyen;
+        private System.Windows.Forms.Label tienhang;
+        private System.Windows.Forms.Label label38;
+        private CSharp.Winform.UI.Label error;
     }
 }
