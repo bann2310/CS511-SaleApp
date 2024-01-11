@@ -311,6 +311,7 @@
     </Compile>
     <Compile Include="MainPage\Chat\ChatItemUser.Designer.cs">
       <DependentUpon>ChatItemUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage\Catemini\Catenho.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -443,6 +444,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CartPage\Order\OrderUC.resx">
       <DependentUpon>OrderUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\AddressCreate.resx">
       <DependentUpon>AddressCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -487,6 +489,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage\Chat\ChatItemUser.resx">
       <DependentUpon>ChatItemUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage\Catemini\Catenho.resx">
       <DependentUpon>Catenho.cs</DependentUpon>
     </EmbeddedResource>
