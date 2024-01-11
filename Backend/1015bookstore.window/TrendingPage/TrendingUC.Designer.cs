@@ -33,14 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.trending = new System.Windows.Forms.FlowLayoutPanel();
-            this.trendingItem1 = new _1015bookstore.window.TrendingPage.TrendingItem();
-            this.trendingItem2 = new _1015bookstore.window.TrendingPage.TrendingItem();
-            this.trendingItem3 = new _1015bookstore.window.TrendingPage.TrendingItem();
-            this.trendingItem4 = new _1015bookstore.window.TrendingPage.TrendingItem();
-            this.trendingItem5 = new _1015bookstore.window.TrendingPage.TrendingItem();
-            this.trendingItem6 = new _1015bookstore.window.TrendingPage.TrendingItem();
-            this.trendingItem7 = new _1015bookstore.window.TrendingPage.TrendingItem();
-            this.trendingItem8 = new _1015bookstore.window.TrendingPage.TrendingItem();
             this.panel3 = new System.Windows.Forms.Panel();
             this.theloai = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -101,90 +93,10 @@
             // 
             // trending
             // 
-            this.trending.Controls.Add(this.trendingItem1);
-            this.trending.Controls.Add(this.trendingItem2);
-            this.trending.Controls.Add(this.trendingItem3);
-            this.trending.Controls.Add(this.trendingItem4);
-            this.trending.Controls.Add(this.trendingItem5);
-            this.trending.Controls.Add(this.trendingItem6);
-            this.trending.Controls.Add(this.trendingItem7);
-            this.trending.Controls.Add(this.trendingItem8);
             this.trending.Location = new System.Drawing.Point(48, 0);
             this.trending.Name = "trending";
             this.trending.Size = new System.Drawing.Size(950, 560);
             this.trending.TabIndex = 0;
-            // 
-            // trendingItem1
-            // 
-            this.trendingItem1.BackColor = System.Drawing.Color.White;
-            this.trendingItem1.Location = new System.Drawing.Point(0, 20);
-            this.trendingItem1.Margin = new System.Windows.Forms.Padding(0, 20, 35, 0);
-            this.trendingItem1.Name = "trendingItem1";
-            this.trendingItem1.Size = new System.Drawing.Size(200, 260);
-            this.trendingItem1.TabIndex = 0;
-            // 
-            // trendingItem2
-            // 
-            this.trendingItem2.BackColor = System.Drawing.Color.White;
-            this.trendingItem2.Location = new System.Drawing.Point(235, 20);
-            this.trendingItem2.Margin = new System.Windows.Forms.Padding(0, 20, 35, 0);
-            this.trendingItem2.Name = "trendingItem2";
-            this.trendingItem2.Size = new System.Drawing.Size(200, 260);
-            this.trendingItem2.TabIndex = 1;
-            // 
-            // trendingItem3
-            // 
-            this.trendingItem3.BackColor = System.Drawing.Color.White;
-            this.trendingItem3.Location = new System.Drawing.Point(470, 20);
-            this.trendingItem3.Margin = new System.Windows.Forms.Padding(0, 20, 35, 0);
-            this.trendingItem3.Name = "trendingItem3";
-            this.trendingItem3.Size = new System.Drawing.Size(200, 260);
-            this.trendingItem3.TabIndex = 2;
-            // 
-            // trendingItem4
-            // 
-            this.trendingItem4.BackColor = System.Drawing.Color.White;
-            this.trendingItem4.Location = new System.Drawing.Point(705, 20);
-            this.trendingItem4.Margin = new System.Windows.Forms.Padding(0, 20, 35, 0);
-            this.trendingItem4.Name = "trendingItem4";
-            this.trendingItem4.Size = new System.Drawing.Size(200, 260);
-            this.trendingItem4.TabIndex = 3;
-            // 
-            // trendingItem5
-            // 
-            this.trendingItem5.BackColor = System.Drawing.Color.White;
-            this.trendingItem5.Location = new System.Drawing.Point(0, 300);
-            this.trendingItem5.Margin = new System.Windows.Forms.Padding(0, 20, 35, 0);
-            this.trendingItem5.Name = "trendingItem5";
-            this.trendingItem5.Size = new System.Drawing.Size(200, 260);
-            this.trendingItem5.TabIndex = 4;
-            // 
-            // trendingItem6
-            // 
-            this.trendingItem6.BackColor = System.Drawing.Color.White;
-            this.trendingItem6.Location = new System.Drawing.Point(235, 300);
-            this.trendingItem6.Margin = new System.Windows.Forms.Padding(0, 20, 35, 0);
-            this.trendingItem6.Name = "trendingItem6";
-            this.trendingItem6.Size = new System.Drawing.Size(200, 260);
-            this.trendingItem6.TabIndex = 5;
-            // 
-            // trendingItem7
-            // 
-            this.trendingItem7.BackColor = System.Drawing.Color.White;
-            this.trendingItem7.Location = new System.Drawing.Point(470, 300);
-            this.trendingItem7.Margin = new System.Windows.Forms.Padding(0, 20, 35, 0);
-            this.trendingItem7.Name = "trendingItem7";
-            this.trendingItem7.Size = new System.Drawing.Size(200, 260);
-            this.trendingItem7.TabIndex = 6;
-            // 
-            // trendingItem8
-            // 
-            this.trendingItem8.BackColor = System.Drawing.Color.White;
-            this.trendingItem8.Location = new System.Drawing.Point(705, 300);
-            this.trendingItem8.Margin = new System.Windows.Forms.Padding(0, 20, 35, 0);
-            this.trendingItem8.Name = "trendingItem8";
-            this.trendingItem8.Size = new System.Drawing.Size(200, 260);
-            this.trendingItem8.TabIndex = 7;
             // 
             // panel3
             // 
@@ -335,14 +247,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel trending;
-        private TrendingItem trendingItem1;
-        private TrendingItem trendingItem2;
-        private TrendingItem trendingItem3;
-        private TrendingItem trendingItem4;
-        private TrendingItem trendingItem5;
-        private TrendingItem trendingItem6;
-        private TrendingItem trendingItem7;
-        private TrendingItem trendingItem8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel theloai;
         private System.Windows.Forms.Label label2;
