@@ -181,6 +181,16 @@
     <Compile Include="CartPage\Order\MyOrder.Designer.cs">
       <DependentUpon>MyOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="CartPage\Review\ReviewItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CartPage\Review\ReviewItemUC.Designer.cs">
+      <DependentUpon>ReviewItemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartPage\Review\ReviewUC.cs" />
+    <Compile Include="CartPage\Review\ReviewUC.Designer.cs">
+      <DependentUpon>ReviewUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Emun\CartStatus.cs" />
     <Compile Include="CartPage\Cart\CartItemOOSUC.cs">
       <SubType>UserControl</SubType>
@@ -465,6 +475,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CartPage\Order\OrderUC.resx">
       <DependentUpon>OrderUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartPage\Review\ReviewItemUC.resx">
+      <DependentUpon>ReviewItemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartPage\Review\ReviewUC.resx">
+      <DependentUpon>ReviewUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\AddressCreate.resx">
       <DependentUpon>AddressCreate.cs</DependentUpon>
