@@ -1,81 +1,173 @@
-﻿using System;
+﻿using _1015bookstore.window.Business;
+using _1015bookstore.window.CartPage.Cart;
+using _1015bookstore.window.ViewModel.Catalog;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace _1015bookstore.window.CartPage
 {
     public partial class CartItemUC : UserControl
     {
-        string _tensanpham, _dongia, _soluong, _sotien;
-        public CartItemUC()
+        CartViewModel cart;
+        CartAPIClient client;
+        private string filepath = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())), @"Img\user-content");
+        public CartItemUC(CartViewModel cart)
         {
             InitializeComponent();
-
-            uncheck.Visible = true;
-            check.Visible = false;
+            this.cart = cart;
+            client = new CartAPIClient();
+            SetPicture();
+            SetAmount();
+            SetPrice();
+            SetName();
+            SetTotal();
         }
 
-        private void soluong_TextChanged(object sender, EventArgs e)
+        public bool IsChoose()
         {
-            int sl = 1;
-            // Loại bỏ các ký tự phi số
-            string text = new string(soluong.Text.Where(char.IsDigit).ToArray());
-            // Loại bỏ 0 ở đầu
-            if (text.StartsWith("0"))
-                text = text.TrimStart('0');
+            return checkBox1.Checked;
+        }
 
-            if (!string.IsNullOrEmpty(text))
+        private async void RemoveCart()
+        {
+            var response = await client.DeleteCart(Properties.Settings.Default.session, cart.iCart_id);
+            if (response.Status)
             {
-                sl = int.Parse(text);
+                var parent = this.Parent.Parent as MyCart;
+                parent.SubTotal(Convert.ToInt32(soluong.Text) * cart.vProduct_price);
 
-                if (sl > 99)
-                    sl = 99;
+                var flowpanel = this.Parent;
+                flowpanel.Height -= 150; 
+                flowpanel.Controls.Remove(this);
+
+                if (flowpanel.Bottom > 1000)
+                {
+                    parent.Height = flowpanel.Bottom + 400 + 20;
+                }
+            }
+        }
+
+        private void SetTotal()
+        {
+            sotien.Text = String.Format("{0:0.##}", cart.iProduct_amount * cart.vProduct_price) + " đ";
+        }
+
+        private void SetPicture()
+        {
+            if (cart.sImage_path == null)
+            {
+                string url = Path.Combine(filepath, "default.png");
+                Image image = Image.FromFile(url);
+                avatarsanpham.Image = image;
+            }
+            else
+            {
+                string url = Path.Combine(filepath, cart.sImage_path);
+                Image image = Image.FromFile(url);
+                avatarsanpham.Image = image;
             }
 
-            soluong.Text = sl.ToString();
+        }
+        private void SetAmount()
+        {
+            soluong.Text = cart.iProduct_amount.ToString();
+        }
+        private void SetPrice()
+        {
+            dongia.Text =  String.Format("{0:0.##}", cart.vProduct_price) + " đ";
+        }
+        private void SetName()
+        {
+            var name_ = cart.sProduct_name;
+            if (name_.Length >= 54)
+            {
+                for (int i = 55 - 1; i >= 0; i--)
+                {
+                    if (name_[i] == ' ')
+                    {
+                        name_ = name_.Insert(i, "\n");
+                        break;
+                    }
+                }
+            }
+            if (name_.Length >= 80)
+            {
+                for (int i = 81 - 1; i >= 0; i--)
+                {
+                    if (name_[i] == ' ')
+                    {
+                        name_ = new string(name_.Take(i).ToArray()) + new string('.', 3);
+                        break;
+                    }
+                }
+            }
+            tensanpham.Text = name_;
         }
 
-        // Xử lý nút cộng, trừ số lượng
+        private async void addproduct()
+        {
+            var response = await client.PlusCart(Properties.Settings.Default.session, cart.iCart_id, 1);
+            if (response.Status)
+            {
+                soluong.Text = (Convert.ToInt32(soluong.Text) + 1).ToString();
+                sotien.Text =  String.Format("{0:0.##}", (Convert.ToInt32(soluong.Text) * cart.vProduct_price)) + " đ";
+            }
+            else
+            {
+                MessageBox.Show("Số lượng không đủ để thêm vào vỏ hàng");
+            }
+        }
+
+        private async void subproduct()
+        {
+            if (soluong.Text == 1.ToString())
+            {
+                return;
+            }
+            var response = await client.MinusCart(Properties.Settings.Default.session, cart.iCart_id, -1);
+            if (response.Status)
+            {
+                soluong.Text = (Convert.ToInt32(soluong.Text) - 1).ToString();
+                sotien.Text = String.Format("{0:0.##}", Convert.ToInt32(soluong.Text) * cart.vProduct_price) + " đ";
+            }
+        }
+
+        private void xoa_Click(object sender, EventArgs e)
+        {
+            RemoveCart();
+        }
+
         private void cong_Click(object sender, EventArgs e)
         {
-            int sl = int.Parse(soluong.Text);
-
-            if (sl < 99)
-                sl++;
-            else
-                sl = 1;
-
-            soluong.Text = sl.ToString();
+            addproduct();
         }
 
         private void tru_Click(object sender, EventArgs e)
         {
-            int sl = int.Parse(soluong.Text);
+            subproduct();
+        }
 
-            if (sl > 1)
-                sl--;
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            var parent = this.Parent.Parent as MyCart;
+            if (checkBox1.Checked)
+            {
+                
+                parent.AddTotal(Convert.ToInt32(soluong.Text) * cart.vProduct_price);
+            }
             else
-                sl = 99;
-
-            soluong.Text = sl.ToString();
-        }
-
-        private void uncheck_Click(object sender, EventArgs e)
-        {
-            check.Visible = true;
-            uncheck.Visible = false;
-        }
-
-        private void check_Click(object sender, EventArgs e)
-        {
-            uncheck.Visible = true;
-            check.Visible = false;
+            {
+                parent.SubTotal(Convert.ToInt32(soluong.Text) * cart.vProduct_price);
+            }    
         }
     }
 }

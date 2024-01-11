@@ -1,4 +1,6 @@
-﻿using _1015bookstore.window.ViewModel.Catalog.Products;
+﻿using _1015bookstore.window.Business;
+using _1015bookstore.window.ViewModel.Catalog.Carts;
+using _1015bookstore.window.ViewModel.Catalog.Products;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,11 +18,13 @@ namespace _1015bookstore.window.ProductPage.ProductPick
     {
         private ProductViewModel product;
         private string filepath = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())), @"Img\user-content");
+        private CartAPIClient client;
         public ProductPickUC(ProductViewModel product)
         {
             InitializeComponent();
             soluong.Text = "1";
             this.product = product;
+            client = new CartAPIClient();
             SetPicture();
             SetPrice();
             SetCountBuy();
@@ -152,8 +156,39 @@ namespace _1015bookstore.window.ProductPage.ProductPick
             soluong.Text = sl.ToString();
         }
 
+        private async void AddCart()
+        {
+            var cartrequest = new CartAddProduct
+            {
+                iProduct_id = product.iProduct_id,
+                iProduct_amount = Convert.ToInt32(soluong.Text),
+            };
+            var response = await client.AddCart(Properties.Settings.Default.session, cartrequest, Properties.Settings.Default.id);
+            if (response.Status)
+            {
+                MessageBox.Show("Thêm vào giỏ hàng thành công");
+            }    
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(Properties.Settings.Default.session))
+            {
+                var form = this.TopLevelControl as MainA;
+                form.login();
+            }   
+            else
+            {
+                AddCart();
+            }    
+        }
 
-
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(Properties.Settings.Default.session))
+            {
+                var form = this.TopLevelControl as MainA;
+                form.login();
+            }
+        }
     }
 }

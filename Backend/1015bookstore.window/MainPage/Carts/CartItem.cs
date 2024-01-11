@@ -67,7 +67,7 @@ namespace _1015bookstore.window.MainPage
         }
         private void SetPrice()
         {
-            price.Text = price_.ToString();
+            price.Text = String.Format("{0:0.##}", price_) + " đ";
         }
         private void SetName()
         {
