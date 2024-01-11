@@ -54,7 +54,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
             this.panel1.Location = new System.Drawing.Point(10, 31);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(280, 1);
             this.panel1.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 37);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(295, 261);
             this.flowLayoutPanel1.TabIndex = 2;
@@ -75,7 +75,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 300);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(300, 40);
             this.panel2.TabIndex = 3;
@@ -84,7 +84,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
             this.panel3.Location = new System.Drawing.Point(10, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(280, 1);
             this.panel3.TabIndex = 2;
@@ -97,12 +97,13 @@
             this.button1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(167, 6);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 30);
             this.button1.TabIndex = 1;
             this.button1.Text = "Xem giỏ hàng";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -126,7 +127,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Cart";
             this.Size = new System.Drawing.Size(300, 340);
             this.panel2.ResumeLayout(false);

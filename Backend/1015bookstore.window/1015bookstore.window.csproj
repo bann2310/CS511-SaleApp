@@ -169,6 +169,18 @@
     <Compile Include="Business\ReviewAPIClient.cs" />
     <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
+    <Compile Include="CartPage\Cart\MyCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CartPage\Cart\MyCart.Designer.cs">
+      <DependentUpon>MyCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartPage\Order\MyOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CartPage\Order\MyOrder.Designer.cs">
+      <DependentUpon>MyOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Emun\CartStatus.cs" />
     <Compile Include="CartPage\Cart\CartItemOOSUC.cs">
       <SubType>UserControl</SubType>
@@ -408,6 +420,10 @@
     <Compile Include="ViewModel\Catalog\Carts\CartViewModel.cs" />
     <Compile Include="ViewModel\Catalog\Categories\CategoryParentAndChildViewModel.cs" />
     <Compile Include="ViewModel\Catalog\Categories\CategoryViewModel.cs" />
+    <Compile Include="ViewModel\Catalog\Orders\OrderBuyRequest.cs" />
+    <Compile Include="ViewModel\Catalog\Orders\OrderCreateRequest.cs" />
+    <Compile Include="ViewModel\Catalog\Orders\OrderDetailViewModel.cs" />
+    <Compile Include="ViewModel\Catalog\Orders\OrderViewModel.cs" />
     <Compile Include="ViewModel\Catalog\Products\ProductViewModel.cs" />
     <Compile Include="ViewModel\Catalog\Reviews\ReviewViewModel.cs" />
     <Compile Include="ViewModel\ResponseAPI.cs" />
@@ -429,6 +445,9 @@
     <EmbeddedResource Include="CartPage\Cart\CartUC.resx">
       <DependentUpon>CartUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CartPage\Cart\MyCart.resx">
+      <DependentUpon>MyCart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CartPage\Cart\TotalUC.resx">
       <DependentUpon>TotalUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -437,6 +456,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CartPage\Order\DiaChi\DiaChiUC.resx">
       <DependentUpon>DiaChiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartPage\Order\MyOrder.resx">
+      <DependentUpon>MyOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CartPage\Order\OrderItemUC.resx">
       <DependentUpon>OrderItemUC.cs</DependentUpon>

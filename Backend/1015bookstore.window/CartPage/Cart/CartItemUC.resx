@@ -121,7 +121,7 @@
   <data name="xoa.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAQ1JREFUSEu1lb0RgkAQhSmJEoipgk44oAJtiAIch4gSjCE1wnscO+Dx7gfBnfkS
+        DgAACw4BQL7hQQAAAQ1JREFUSEu1lb0RgkAQhSmJEoipgk44oAJtiAIch4gSjCE1wnscO+Dx7gfBnfkS
         d32f3gabSKUPlaVd06ZdPWim39EZz7pYYk3pD0s+fIamXMJVwQeuQGX49XgW0ryCqtUC1riMgQpe72Em
         72+7ng1mZJ71HYJxQoUkEm5mRzpDBXl/D0rscHzHngHOHfgkseHAu2QmORIOvAJgS46Eg6AAbCWo2HAQ
         KVifBSXPxWZtIp7o+823zxUjCSx5v1B7JyGJU8DC1168hAp84etMnIQKQuGCLWEzDoFZpi9cEAlgfQhO
@@ -1283,26 +1283,6 @@
         oftiu4T6xwaMRHhE4F1rX+5jIwijpEW2eDRXDR+jGhn0Li/W/DFOp+ONlb8c6S/hj0N+GKd/bZ1f22db
         9lincfXwdTEp/pzo/sZ0C+s/2Tnj593PUvzjO/8AHPOT9v8AWVaX7D/WUtD6/wBWI4T/AMeMkO/vLx1g
         k0M5g8QP0MgkX/PeL19Iz+8YEGrbUAeV2+8JiAgBP/7f/9k=
-</value>
-  </data>
-  <data name="uncheck.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
-        JQAAFiUBSVIk8AAAAPhJREFUaEPt2UEKgzAUAFGPUGhB3TTef2NvkCN5hDZCFiIuUh8YFxn4FITMfNtd
-        0zUajcZ9eQzT9BpCfPZhSZ/fy6cP87pDXuc/1oPVFt/OGJZTL5GWnw+FdSbmtco5kNSb9CvktcrZS/Lj
-        y+A+CxDuswDhPgsQ7rMA4T4LEO6zAOE+CxDuswDhPgsQ7rMA4T4LEO6zAOE+CxDuswDhPgsQ7rMA4T4L
-        EO6zAOE+CxDuswDhPgsQ7rMA4T4LEO6zAOE+CxDuswDhPgsQ7t/ir/XN5LXKSYfiXlJt+vcnr1XOXS44
-        1h3slmasc9GRv7x4evlGo9G4gK77AVLmhRkg9W7cAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="check.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAANZJREFUSEvtldENwjAMRDtCRIKa/BCPwEawAWwAGzFSR+gIwIGN0jiIpsBX+yRL
-        jXu+q5pIaRaqsJ52to298/E6payPHTzYTgNBabCqQuzZTiMiXlbzcX5eAcaQeW5q7Lj12wAb4gXavwQ4
-        TycxN56I2/UB8gtSk1VLB9GZNW25/SCfV+QCmGMtITAUjQt0ZNmLfF6RC2Cahsiz85szSwbk84qSIA1B
-        YXP5laI0P+CdQEJQOJ7cVkwOGMsMAr65C6SwT2ynuV8W+/TE1BY+EB5stzCGprkBZ4bJHuZGocgAAAAA
-        SUVORK5CYII=
 </value>
   </data>
 </root>

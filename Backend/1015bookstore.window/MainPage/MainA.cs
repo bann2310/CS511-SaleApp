@@ -1,4 +1,6 @@
 ﻿using _1015bookstore.window.Business;
+using _1015bookstore.window.CartPage.Cart;
+using _1015bookstore.window.CartPage.Order;
 using _1015bookstore.window.InformationPage;
 using _1015bookstore.window.Main;
 using _1015bookstore.window.MainPage;
@@ -7,6 +9,7 @@ using _1015bookstore.window.MainPage.Informations;
 using _1015bookstore.window.MainPage.MainProduct;
 using _1015bookstore.window.ProductPage;
 using _1015bookstore.window.ProductPage.ProductCateAndSearch;
+using _1015bookstore.window.ViewModel.Catalog.Orders;
 using _1015bookstore.window.ViewModel.Catalog.Products;
 using _1015bookstore.window.ViewModel.UserAddresses;
 using System;
@@ -64,12 +67,16 @@ namespace _1015bookstore.window
         }
 
         #region Login
-        private void button2_Click(object sender, EventArgs e)
+        public void login()
         {
-
             Login.Login login = new Login.Login();
             login.Show();
             this.Hide();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            login();
         }
         #endregion
 
@@ -327,6 +334,47 @@ namespace _1015bookstore.window
             currentUC = page;
         }
 
+        #endregion
+
+        #region CartPage
+
+        public void CartPage()
+        {
+            body.Controls.Remove(currentUC);
+
+            var page = new MyCart();
+
+            body.Controls.Add(page);
+            page.Location = new Point(0, 0);
+            page.Show();
+
+            currentUC = page;
+
+            this.Controls.Remove(cart);
+            cart = null;
+
+            //page.AddressLoadingCompleted += (sender, e) =>
+            //{
+                
+            //};
+
+            //await page.LoadAddressAsync();
+        }
+
+        #endregion
+
+        #region OrderPage
+        public void OrderPage(OrderViewModel order)
+        {
+            body.Controls.Remove(currentUC);
+
+            var page = new MyOrder(order);
+            body.Controls.Add(page);
+            page.Location = new Point(0, 0);
+            page.Show();
+
+            currentUC = page;
+        }
         #endregion
     }
 }
