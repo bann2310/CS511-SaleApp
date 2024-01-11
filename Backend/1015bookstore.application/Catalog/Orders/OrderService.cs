@@ -83,6 +83,7 @@ namespace _1015bookstore.application.Catalog.Orders
                 
                 //NOTE
                 product.quanity -= item.quantity;
+                product.buy_count += 1;
                 if (product.quanity <= 0)
                 {
                     product.status = ProductStatus.OOS;
