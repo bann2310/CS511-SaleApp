@@ -169,12 +169,9 @@
     <Compile Include="Business\ReviewAPIClient.cs" />
     <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
-<<<<<<< HEAD
     <Compile Include="CartPage\Cart\CartItemOOSUC.cs">
-=======
     <Compile Include="Emun\CartStatus.cs" />
     <Compile Include="CartPage\CartItemOOSUC.cs">
->>>>>>> c1552bd9139db1d6242042455f72e9962ccd150c
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CartPage\Cart\CartItemOOSUC.designer.cs">
@@ -309,19 +306,16 @@
     <Compile Include="InformationPage\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="MainPage\Chat\ChatItemUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MainPage\Chat\ChatItemUser.Designer.cs">
       <DependentUpon>ChatItemUser.cs</DependentUpon>
-=======
     <Compile Include="MainPage\Catemini\Catenho.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MainPage\Catemini\Catenho.Designer.cs">
       <DependentUpon>Catenho.cs</DependentUpon>
->>>>>>> c1552bd9139db1d6242042455f72e9962ccd150c
     </Compile>
     <Compile Include="MainPage\Chat\ChatUC.cs">
       <SubType>UserControl</SubType>
@@ -438,7 +432,6 @@
     <EmbeddedResource Include="CartPage\Cart\TotalUC.resx">
       <DependentUpon>TotalUC.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="CartPage\Order\DiaChi\DiaChiItemUC.resx">
       <DependentUpon>DiaChiItemUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -450,10 +443,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CartPage\Order\OrderUC.resx">
       <DependentUpon>OrderUC.cs</DependentUpon>
-=======
     <EmbeddedResource Include="InformationPage\AddressCreate.resx">
       <DependentUpon>AddressCreate.cs</DependentUpon>
->>>>>>> c1552bd9139db1d6242042455f72e9962ccd150c
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\AddressDetail.resx">
       <DependentUpon>AddressDetail.cs</DependentUpon>
@@ -494,13 +485,10 @@
     <EmbeddedResource Include="InformationPage\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="MainPage\Chat\ChatItemUser.resx">
       <DependentUpon>ChatItemUser.cs</DependentUpon>
-=======
     <EmbeddedResource Include="MainPage\Catemini\Catenho.resx">
       <DependentUpon>Catenho.cs</DependentUpon>
->>>>>>> c1552bd9139db1d6242042455f72e9962ccd150c
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage\Chat\ChatUC.resx">
       <DependentUpon>ChatUC.cs</DependentUpon>
