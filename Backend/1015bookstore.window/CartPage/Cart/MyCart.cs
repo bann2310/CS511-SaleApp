@@ -1,6 +1,7 @@
 ﻿using _1015bookstore.window.Business;
 using _1015bookstore.window.MainPage;
 using _1015bookstore.window.ViewModel.Catalog;
+using _1015bookstore.window.ViewModel.Catalog.Orders;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,27 +19,17 @@ namespace _1015bookstore.window.CartPage.Cart
         private readonly CartAPIClient client;
         private List<CartViewModel> list;
         private decimal total = 0;
-
+        private OrderAPIClient clientOrder;
         //public event EventHandler AddressLoadingCompleted;
 
         public MyCart()
         {
             InitializeComponent();
             client = new CartAPIClient();
+            clientOrder = new OrderAPIClient();
             GetCart();
         }
 
-        //public async Task LoadAddressAsync()
-        //{
-
-        //    await Task.Delay(3000);
-
-        //    OnAddressLoadingCompleted();
-        //}
-        //protected virtual void OnAddressLoadingCompleted()
-        //{
-        //    AddressLoadingCompleted?.Invoke(this, EventArgs.Empty);
-        //}
 
         private async void GetCart()
         {
@@ -57,7 +48,7 @@ namespace _1015bookstore.window.CartPage.Cart
 
                     if (count != 1)
                     {
-                        giohang.Height += 150;
+                        giohang.Height += 150 + 10;
                     }    
                     
                 }
@@ -79,7 +70,7 @@ namespace _1015bookstore.window.CartPage.Cart
             tongtien.Text = String.Format("{0:0.##}", total) + " đ";
         }
 
-        private void CreateOrder()
+        private async void CreateOrder()
         {
             var listchoose = new List<int>();
 
@@ -94,7 +85,17 @@ namespace _1015bookstore.window.CartPage.Cart
 
             if (listchoose.Count > 0)
             {
-
+                var request = new OrderCreateRequest
+                {
+                    lCart_ids = listchoose,
+                    gUser_id = Properties.Settings.Default.id
+                };
+                var response = await clientOrder.AddOrder(Properties.Settings.Default.session, request);
+                if (response.Status)
+                {
+                    var form = this.TopLevelControl as MainA;
+                    form.OrderPage(response.Data);
+                }    
             }
         }
 

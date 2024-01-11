@@ -352,13 +352,7 @@ namespace _1015bookstore.window
 
             this.Controls.Remove(cart);
             cart = null;
-
-            //page.AddressLoadingCompleted += (sender, e) =>
-            //{
-                
-            //};
-
-            //await page.LoadAddressAsync();
+            pictureBox3.BackColor = Color.White;
         }
 
         #endregion
