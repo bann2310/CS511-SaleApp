@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,9 @@ namespace _1015bookstore.window.InformationPage
     {
         private Guid user_id;
         private UserAddressAPIClient client;
+
+        public event EventHandler AddressLoadingCompleted;
+
         public InforAddress(Guid user_id)
         {
             InitializeComponent();
@@ -25,9 +29,23 @@ namespace _1015bookstore.window.InformationPage
             GetListAddress();
         }
 
+        public async Task LoadAddressAsync()
+        {
+
+            await Task.Delay(1000);
+
+            OnAddressLoadingCompleted();
+        }
+        protected virtual void OnAddressLoadingCompleted()
+        {
+            AddressLoadingCompleted?.Invoke(this, EventArgs.Empty);
+        }
+
         private async void GetListAddress()
         {
             var response = await client.GetAddressByUser(Properties.Settings.Default.session, user_id);
+            flowLayoutPanel1.Height = flowLayoutPanel1.Height + (response.Data.Count * (134 + 5));
+            this.Height = flowLayoutPanel1.Bottom + 10;
             if (response.Status) 
             {
                 foreach (var item in response.Data)
@@ -50,6 +68,15 @@ namespace _1015bookstore.window.InformationPage
                 }
             }
         }
-        
+
+        private void OpenCreateAddress()
+        {
+            var form = this.TopLevelControl as MainA;
+            form.open_createaddress(Properties.Settings.Default.id);
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenCreateAddress();
+        }
     }
 }

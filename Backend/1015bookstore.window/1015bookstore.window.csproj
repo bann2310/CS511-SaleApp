@@ -163,10 +163,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\CartAPIClient.cs" />
+    <Compile Include="Business\CategoryAPIClient.cs" />
     <Compile Include="Business\FormFile.cs" />
+    <Compile Include="Business\ProductAPIClient.cs" />
+    <Compile Include="Business\ReviewAPIClient.cs" />
     <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
+<<<<<<< HEAD
     <Compile Include="CartPage\Cart\CartItemOOSUC.cs">
+=======
+    <Compile Include="Emun\CartStatus.cs" />
+    <Compile Include="CartPage\CartItemOOSUC.cs">
+>>>>>>> c1552bd9139db1d6242042455f72e9962ccd150c
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CartPage\Cart\CartItemOOSUC.designer.cs">
@@ -214,7 +222,15 @@
     <Compile Include="CartPage\Cart\TotalUC.designer.cs">
       <DependentUpon>TotalUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Emun\CartStatus.cs" />
+    <Compile Include="Emun\CategoryShow.cs" />
+    <Compile Include="Emun\CategoryStatus.cs" />
+    <Compile Include="Emun\ProductStatus.cs" />
+    <Compile Include="InformationPage\AddressCreate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\AddressCreate.Designer.cs">
+      <DependentUpon>AddressCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="InformationPage\AddressDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -293,11 +309,19 @@
     <Compile Include="InformationPage\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="MainPage\Chat\ChatItemUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MainPage\Chat\ChatItemUser.Designer.cs">
       <DependentUpon>ChatItemUser.cs</DependentUpon>
+=======
+    <Compile Include="MainPage\Catemini\Catenho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainPage\Catemini\Catenho.Designer.cs">
+      <DependentUpon>Catenho.cs</DependentUpon>
+>>>>>>> c1552bd9139db1d6242042455f72e9962ccd150c
     </Compile>
     <Compile Include="MainPage\Chat\ChatUC.cs">
       <SubType>UserControl</SubType>
@@ -329,6 +353,18 @@
     <Compile Include="MainPage\UCHome\HomePageUC.Designer.cs">
       <DependentUpon>HomePageUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductPage\ProductCateAndSearch\CateAndSearchItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductPage\ProductCateAndSearch\CateAndSearchItem.Designer.cs">
+      <DependentUpon>CateAndSearchItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPage\ProductCateAndSearch\CateAndSearchPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductPage\ProductCateAndSearch\CateAndSearchPage.Designer.cs">
+      <DependentUpon>CateAndSearchPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductPage\ProductDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -340,6 +376,12 @@
     </Compile>
     <Compile Include="ProductPage\ProductPick\ProductPickUC.Designer.cs">
       <DependentUpon>ProductPickUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPage\ProductViewPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductPage\ProductViewPage.Designer.cs">
+      <DependentUpon>ProductViewPage.cs</DependentUpon>
     </Compile>
     <Compile Include="ProductPage\Reviews\ReviewDetailUC.cs">
       <SubType>UserControl</SubType>
@@ -370,6 +412,10 @@
     </Compile>
     <Compile Include="ViewModel\Catalog\Carts\CartAddProduct.cs" />
     <Compile Include="ViewModel\Catalog\Carts\CartViewModel.cs" />
+    <Compile Include="ViewModel\Catalog\Categories\CategoryParentAndChildViewModel.cs" />
+    <Compile Include="ViewModel\Catalog\Categories\CategoryViewModel.cs" />
+    <Compile Include="ViewModel\Catalog\Products\ProductViewModel.cs" />
+    <Compile Include="ViewModel\Catalog\Reviews\ReviewViewModel.cs" />
     <Compile Include="ViewModel\ResponseAPI.cs" />
     <Compile Include="ViewModel\UserAddress\AddressViewModel.cs" />
     <Compile Include="ViewModel\UserAddress\UserAddressRequestCreate.cs" />
@@ -392,6 +438,7 @@
     <EmbeddedResource Include="CartPage\Cart\TotalUC.resx">
       <DependentUpon>TotalUC.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="CartPage\Order\DiaChi\DiaChiItemUC.resx">
       <DependentUpon>DiaChiItemUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +450,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CartPage\Order\OrderUC.resx">
       <DependentUpon>OrderUC.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="InformationPage\AddressCreate.resx">
+      <DependentUpon>AddressCreate.cs</DependentUpon>
+>>>>>>> c1552bd9139db1d6242042455f72e9962ccd150c
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\AddressDetail.resx">
       <DependentUpon>AddressDetail.cs</DependentUpon>
@@ -443,8 +494,13 @@
     <EmbeddedResource Include="InformationPage\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="MainPage\Chat\ChatItemUser.resx">
       <DependentUpon>ChatItemUser.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="MainPage\Catemini\Catenho.resx">
+      <DependentUpon>Catenho.cs</DependentUpon>
+>>>>>>> c1552bd9139db1d6242042455f72e9962ccd150c
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage\Chat\ChatUC.resx">
       <DependentUpon>ChatUC.cs</DependentUpon>
@@ -461,11 +517,20 @@
     <EmbeddedResource Include="MainPage\UCHome\HomePageUC.resx">
       <DependentUpon>HomePageUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProductPage\ProductCateAndSearch\CateAndSearchItem.resx">
+      <DependentUpon>CateAndSearchItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductPage\ProductCateAndSearch\CateAndSearchPage.resx">
+      <DependentUpon>CateAndSearchPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProductPage\ProductDetails.resx">
       <DependentUpon>ProductDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductPage\ProductPick\ProductPickUC.resx">
       <DependentUpon>ProductPickUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductPage\ProductViewPage.resx">
+      <DependentUpon>ProductViewPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductPage\Reviews\ReviewDetailUC.resx">
       <DependentUpon>ReviewDetailUC.cs</DependentUpon>

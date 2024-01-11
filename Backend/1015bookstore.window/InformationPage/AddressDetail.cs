@@ -1,4 +1,5 @@
 ﻿using _1015bookstore.window.Business;
+using _1015bookstore.window.MainPage.Informations;
 using _1015bookstore.window.ViewModel.UserAddresses;
 using System;
 using System.Collections.Generic;
@@ -63,6 +64,21 @@ namespace _1015bookstore.window.InformationPage
         private void label6_Click(object sender, EventArgs e)
         {
             OpenUpdateAddress();
+        }
+
+        private async void Setdefault()
+        {
+            var response = await client.SetDefaultAddress(Properties.Settings.Default.session, address.id);
+            if(response.Status)
+            {
+                var inforpage = this.Parent.Parent.Parent as Information;
+                inforpage.afterupdateaddress();
+            }    
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Setdefault();
         }
     }
 }

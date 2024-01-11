@@ -1,4 +1,5 @@
 ﻿using _1015bookstore.window.Business;
+using _1015bookstore.window.MainPage.Informations;
 using _1015bookstore.window.ViewModel.User;
 using Microsoft.Win32;
 using System;
@@ -76,7 +77,7 @@ namespace _1015bookstore.window.InformationPage
                 error.Visible = true;
                 return;
             }
-            if (tmp == null)
+            if (tmp == null && viewModel.sUser_avt == null)
             {
                 error.Text = "*Vui lòng chọn ảnh đại diện";
                 error.Visible = true;
@@ -95,12 +96,22 @@ namespace _1015bookstore.window.InformationPage
             };
 
             var response = await userAPIClient.UpdateUser(request, Properties.Settings.Default.session);
+            if (response.Status)
+            {
+                var inforpage = this.Parent as Information;
+                inforpage.afterupdateinfor();
+            }
 
         }
 
         private async void button2_Click(object sender, EventArgs e)
         {
            await saveinfor();
+        }
+
+        private void InforDetail_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

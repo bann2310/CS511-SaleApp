@@ -1,8 +1,13 @@
-﻿using _1015bookstore.window.InformationPage;
+﻿using _1015bookstore.window.Business;
+using _1015bookstore.window.InformationPage;
 using _1015bookstore.window.Main;
 using _1015bookstore.window.MainPage;
+using _1015bookstore.window.MainPage.Catemini;
 using _1015bookstore.window.MainPage.Informations;
 using _1015bookstore.window.MainPage.MainProduct;
+using _1015bookstore.window.ProductPage;
+using _1015bookstore.window.ProductPage.ProductCateAndSearch;
+using _1015bookstore.window.ViewModel.Catalog.Products;
 using _1015bookstore.window.ViewModel.UserAddresses;
 using System;
 using System.Collections.Generic;
@@ -13,6 +18,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace _1015bookstore.window
 {
@@ -22,6 +28,11 @@ namespace _1015bookstore.window
         UserControl infor;
         UserControl currentUC;
         UserControl updateAddressOpen;
+        UserControl createAddressOpen;
+        UserControl cate;
+
+        private ProductAPIClient client;
+
         public MainA()
         {
             InitializeComponent();
@@ -38,12 +49,18 @@ namespace _1015bookstore.window
                 pictureBox4.Visible = true;
                 button2.Visible = false;
             }
+            client = new ProductAPIClient();
             homepage();
         }
         private void close_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.Reset();
             Application.Exit();
+        }
+
+        public UserControl GetCurrentUC()
+        {
+            return currentUC;
         }
 
         #region Login
@@ -98,9 +115,10 @@ namespace _1015bookstore.window
                 search();
             }
         }
-        private void search()
+        private async void search()
         {
-
+            var list = await client.GetProductByKeyword(Properties.Settings.Default.session, search_content.Text);
+            CateAndSearchPage($"Danh sách kết quả tìm kiếm {search_content.Text}", list.Data);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -115,6 +133,39 @@ namespace _1015bookstore.window
         }
 
         #endregion
+
+        #region cate
+        //16, 59
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (cate == null)
+            {
+                var cate_ = new Catenho();
+                this.Controls.Add(cate_);
+                cate_.Location = new Point(16, 59);
+                cate_.BringToFront();
+                cate_.Show();
+                cate = cate_;
+
+                pictureBox2.BackColor = Color.FromArgb(213, 255, 234);
+            }
+            else
+            {
+                this.Controls.Remove(cate);
+                cate = null;
+                pictureBox2.BackColor = Color.White;
+            }
+        }
+
+        public void close_catemini()
+        {
+            this.Controls.Remove(cate);
+            cate = null;
+            pictureBox2.BackColor = Color.White;
+        }    
+
+        #endregion
+
 
         #region Cart
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -180,6 +231,23 @@ namespace _1015bookstore.window
         }
         #endregion
 
+        #region CreateAddress
+        public void open_createaddress(Guid user_id)
+        {
+            var createaddressUC = new AddressCreate(user_id);
+            this.Controls.Add(createaddressUC);
+            createaddressUC.Location = new Point(440, 140);
+            createaddressUC.BringToFront();
+            createaddressUC.Show();
+
+            createAddressOpen = createaddressUC;
+        }
+        public void close_createaddress()
+        {
+            this.Controls.Remove(createAddressOpen);
+        }
+        #endregion
+
         #region UpdateAddress
         public void open_updateaddress(AddressViewModel address)
         {
@@ -222,6 +290,43 @@ namespace _1015bookstore.window
             }    
            
         }
+        #endregion
+
+        #region returnHomePage
+        private void returnHomePage(object sender, EventArgs e)
+        {
+            homepage();
+        }
+        #endregion
+
+        #region CateAndSearchPage
+        public void CateAndSearchPage(string name, List<ProductViewModel> listproduct)
+        {
+            body.Controls.Remove(currentUC);
+
+            var page = new CateAndSearchPage(name, listproduct);
+            body.Controls.Add(page);
+            page.Location = new Point(0, 0);
+            page.Show();
+
+            currentUC = page;
+        }
+        #endregion
+
+        #region ProductViewPage
+
+        public void ProductViewPage(ProductViewModel product)
+        {
+            body.Controls.Remove(currentUC);
+
+            var page = new ProductViewPage(product);
+            body.Controls.Add(page);
+            page.Location = new Point(0, 0);
+            page.Show();
+
+            currentUC = page;
+        }
+
         #endregion
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1015bookstore.window.ViewModel.Catalog.Products;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,12 +14,24 @@ namespace _1015bookstore.window.MainPage.Products
 {
     public partial class ProductDetails : UserControl
     {
-        private string _motasanpham;
-        public ProductDetails()
+        private ProductViewModel product;
+        public ProductDetails(ProductViewModel product)
         {
             InitializeComponent();
-
+            this.product = product;
+            Setdata();
             Load_Motasanpham();
+        }
+
+        public void Setdata()
+        {
+            thuonghieu.Text = product.sProduct_brand;
+            nhaxuatban.Text = product.sProduct_nop;
+            nhacungcap.Text = product.sProduct_supplier;
+            tacgia.Text = product.sProduct_author;
+            namxuatban.Text = product.iProduct_yop.ToString();
+            khohang.Text = product.iProduct_quantity.ToString();
+            motasanpham.Text = product.sProduct_description;
         }
 
         public void Load_Motasanpham()
