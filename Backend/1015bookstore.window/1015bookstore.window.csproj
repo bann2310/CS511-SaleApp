@@ -169,9 +169,8 @@
     <Compile Include="Business\ReviewAPIClient.cs" />
     <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
-    <Compile Include="CartPage\Cart\CartItemOOSUC.cs">
     <Compile Include="Emun\CartStatus.cs" />
-    <Compile Include="CartPage\CartItemOOSUC.cs">
+    <Compile Include="CartPage\Cart\CartItemOOSUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CartPage\Cart\CartItemOOSUC.designer.cs">
