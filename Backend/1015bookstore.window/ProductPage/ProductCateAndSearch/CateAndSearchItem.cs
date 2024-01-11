@@ -9,15 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
-namespace _1015bookstore.window.TrendingPage
+namespace _1015bookstore.window.ProductPage.ProductCateAndSearch
 {
-    public partial class TrendingItem : UserControl
+    public partial class CateAndSearchItem : UserControl
     {
+
         private string filepath = Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())), @"Img\user-content");
         private ProductViewModel product;
-        public TrendingItem(ProductViewModel product)
+        public CateAndSearchItem(ProductViewModel product)
         {
             InitializeComponent();
             this.product = product;
@@ -31,8 +31,8 @@ namespace _1015bookstore.window.TrendingPage
             if (product.bProduct_flashsale)
             {
                 label2.Visible = true;
-            }    
-        }    
+            }
+        }
 
         private void SetPicture()
         {
@@ -48,6 +48,8 @@ namespace _1015bookstore.window.TrendingPage
                 Image image = Image.FromFile(url);
                 avatar.Image = image;
             }
+
+            
 
         }
         private void SetPrice()
@@ -86,6 +88,5 @@ namespace _1015bookstore.window.TrendingPage
         {
             buy.Text = product.iProduct_buy_count.ToString();
         }
-
     }
 }

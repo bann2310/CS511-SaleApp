@@ -69,25 +69,25 @@
             this.metroPanel1.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.HorizontalScrollbarSize = 8;
             this.metroPanel1.Location = new System.Drawing.Point(0, 0);
             this.metroPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(1462, 75);
+            this.metroPanel1.Size = new System.Drawing.Size(1462, 80);
             this.metroPanel1.TabIndex = 1;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.VerticalScrollbarSize = 8;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1322, 16);
+            this.pictureBox4.Location = new System.Drawing.Point(1314, 25);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
@@ -99,10 +99,10 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1243, 16);
+            this.pictureBox3.Location = new System.Drawing.Point(1247, 25);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -118,10 +118,10 @@
             this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Controls.Add(this.search_content);
             this.panel1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.panel1.Location = new System.Drawing.Point(440, 17);
+            this.panel1.Location = new System.Drawing.Point(440, 25);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(650, 40);
+            this.panel1.Size = new System.Drawing.Size(520, 32);
             this.panel1.TabIndex = 4;
             // 
             // label_u
@@ -130,7 +130,7 @@
             this.label_u.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label_u.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_u.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label_u.Location = new System.Drawing.Point(52, 9);
+            this.label_u.Location = new System.Drawing.Point(40, 6);
             this.label_u.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_u.Name = "label_u";
             this.label_u.Size = new System.Drawing.Size(182, 20);
@@ -146,10 +146,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(517, 4);
+            this.button1.Location = new System.Drawing.Point(416, 2);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 30);
+            this.button1.Size = new System.Drawing.Size(98, 24);
             this.button1.TabIndex = 2;
             this.button1.Text = "Tìm kiếm";
             this.button1.UseVisualStyleBackColor = false;
@@ -163,11 +163,11 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 36;
-            this.iconPictureBox1.Location = new System.Drawing.Point(10, 3);
+            this.iconPictureBox1.IconSize = 29;
+            this.iconPictureBox1.Location = new System.Drawing.Point(8, 2);
             this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(36, 36);
+            this.iconPictureBox1.Size = new System.Drawing.Size(29, 29);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox1.TabIndex = 1;
             this.iconPictureBox1.TabStop = false;
@@ -178,10 +178,10 @@
             this.search_content.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.search_content.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_content.ForeColor = System.Drawing.Color.Black;
-            this.search_content.Location = new System.Drawing.Point(50, 9);
+            this.search_content.Location = new System.Drawing.Point(40, 7);
             this.search_content.Margin = new System.Windows.Forms.Padding(2);
             this.search_content.Name = "search_content";
-            this.search_content.Size = new System.Drawing.Size(464, 20);
+            this.search_content.Size = new System.Drawing.Size(371, 20);
             this.search_content.TabIndex = 0;
             this.search_content.TabStop = false;
             this.search_content.Click += new System.EventHandler(this.Typing_Click);
@@ -192,13 +192,14 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(20, 20);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 27);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // close
             // 
@@ -208,11 +209,10 @@
             this.close.IconChar = FontAwesome.Sharp.IconChar.Xmark;
             this.close.IconColor = System.Drawing.SystemColors.ControlText;
             this.close.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.close.IconSize = 40;
-            this.close.Location = new System.Drawing.Point(1406, 13);
+            this.close.Location = new System.Drawing.Point(1419, 25);
             this.close.Margin = new System.Windows.Forms.Padding(2);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(40, 40);
+            this.close.Size = new System.Drawing.Size(32, 32);
             this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.close.TabIndex = 1;
             this.close.TabStop = false;
@@ -224,7 +224,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(170, 36);
+            this.label2.Location = new System.Drawing.Point(136, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 33);
@@ -238,7 +238,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Roboto", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(170, 10);
+            this.label1.Location = new System.Drawing.Point(136, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 33);
@@ -251,13 +251,14 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(116, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(93, 17);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 60);
+            this.pictureBox1.Size = new System.Drawing.Size(42, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.returnHomePage);
             // 
             // button2
             // 
@@ -267,10 +268,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1247, 15);
+            this.button2.Location = new System.Drawing.Point(1301, 25);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 46);
+            this.button2.Size = new System.Drawing.Size(93, 37);
             this.button2.TabIndex = 17;
             this.button2.Text = "Đăng nhập";
             this.button2.UseVisualStyleBackColor = false;
@@ -282,18 +283,18 @@
             this.body.AutoScroll = true;
             this.body.BackColor = System.Drawing.Color.WhiteSmoke;
             this.body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.body.Location = new System.Drawing.Point(0, 75);
+            this.body.Location = new System.Drawing.Point(0, 80);
             this.body.Margin = new System.Windows.Forms.Padding(2);
             this.body.Name = "body";
-            this.body.Size = new System.Drawing.Size(1462, 927);
+            this.body.Size = new System.Drawing.Size(1462, 798);
             this.body.TabIndex = 2;
             // 
             // MainA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1828, 1100);
+            this.ClientSize = new System.Drawing.Size(1462, 878);
             this.ControlBox = false;
             this.Controls.Add(this.body);
             this.Controls.Add(this.metroPanel1);

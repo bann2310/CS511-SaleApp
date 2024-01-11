@@ -49,7 +49,7 @@ namespace _1015bookstore.window.MainPage
         {
             if (picture_ == null)
             {
-                string url = filepath + "default.png";
+                string url = Path.Combine(filepath, "default.png");
                 Image image = Image.FromFile(url);
                 pic.Image = image;
             }
