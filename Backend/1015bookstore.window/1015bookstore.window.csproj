@@ -266,6 +266,30 @@
     <Compile Include="InformationPage\InforDetail.Designer.cs">
       <DependentUpon>InforDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="InformationPage\OrderHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\OrderHistory.Designer.cs">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationPage\OrderHistoryDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\OrderHistoryDetail.Designer.cs">
+      <DependentUpon>OrderHistoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationPage\ReviewAfterBuy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\ReviewAfterBuy.Designer.cs">
+      <DependentUpon>ReviewAfterBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationPage\ReviewAfterBuyDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\ReviewAfterBuyDetail.Designer.cs">
+      <DependentUpon>ReviewAfterBuyDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage\ChangePasswordFPUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -429,6 +453,8 @@
     <Compile Include="ViewModel\Catalog\Orders\OrderViewModel.cs" />
     <Compile Include="ViewModel\Catalog\Products\ProductViewModel.cs" />
     <Compile Include="ViewModel\Catalog\PromotionalCodes\PromotionalCodeViewModel.cs" />
+    <Compile Include="ViewModel\Catalog\Reviews\ReviewProduct.cs" />
+    <Compile Include="ViewModel\Catalog\Reviews\ReviewRequestCreate.cs" />
     <Compile Include="ViewModel\Catalog\Reviews\ReviewViewModel.cs" />
     <Compile Include="ViewModel\ResponseAPI.cs" />
     <Compile Include="ViewModel\UserAddress\AddressViewModel.cs" />
@@ -484,6 +510,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\InforDetail.resx">
       <DependentUpon>InforDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationPage\OrderHistory.resx">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationPage\OrderHistoryDetail.resx">
+      <DependentUpon>OrderHistoryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationPage\ReviewAfterBuy.resx">
+      <DependentUpon>ReviewAfterBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationPage\ReviewAfterBuyDetail.resx">
+      <DependentUpon>ReviewAfterBuyDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage\ChangePasswordFPUC.resx">
       <DependentUpon>ChangePasswordFPUC.cs</DependentUpon>

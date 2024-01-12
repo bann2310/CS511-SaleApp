@@ -1,6 +1,7 @@
 ﻿using _1015bookstore.window.Business;
 using _1015bookstore.window.InformationPage;
 using _1015bookstore.window.Login;
+using _1015bookstore.window.ViewModel.Catalog.Orders;
 using _1015bookstore.window.ViewModel.User;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace _1015bookstore.window.MainPage.Informations
         private Guid user_id;
         private UserControl currentUC;
         private UserAPIClient _userAPIClient;
+        UserControl review;
         public Information(Guid user_id)
         {
             InitializeComponent();
@@ -116,6 +118,46 @@ namespace _1015bookstore.window.MainPage.Informations
             Label label = sender as Label;
             label.ForeColor = Color.FromArgb(140, 140, 140);
             label.Font = new Font("Roboto", 13, FontStyle.Regular);
+        }
+
+        private void GetHistory()
+        {
+            this.Controls.Remove(currentUC);
+            currentUC = null;
+
+            var history = new OrderHistory();
+
+
+            history.Location = new Point(380, 30);
+            this.Controls.Add(history);
+            history.BringToFront();
+            history.Show();
+
+            this.Height = history.Bottom + 20 + 400;
+
+            currentUC = history;
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+            GetHistory();
+        }
+    
+        public void OpenReview(OrderViewModel order)
+        {
+            var reviewopen = new ReviewAfterBuy(order);
+            this.Controls.Add(reviewopen);
+            reviewopen.Location = new Point(429, 26);
+            reviewopen.BringToFront();
+            reviewopen.Show();
+
+            review = reviewopen;
+        }    
+        public void CloseReview()
+        {
+            this.Controls.Remove(review);
+            review = null;
+            GetHistory();
         }
     }
 }

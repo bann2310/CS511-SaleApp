@@ -48,5 +48,22 @@ namespace _1015bookstore.window.Business
                 };
             }
         }
+        public async Task<ResponseAPI<string>> AddReview(string session, ReviewRequestCreate request)
+        {
+
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", session);
+            var json = JsonSerializer.Serialize(request);
+            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await _client.PostAsync($"/api/review", httpContent);
+
+            return new ResponseAPI<string>
+            {
+                Status = response.StatusCode == System.Net.HttpStatusCode.OK ? true : false,
+                Message = await response.Content.ReadAsStringAsync(),
+                Data = "",
+            };
+        }
+
     }
 }

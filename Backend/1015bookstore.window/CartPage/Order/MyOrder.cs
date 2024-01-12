@@ -139,7 +139,7 @@ namespace _1015bookstore.window.CartPage.Order
             var request = new OrderBuyRequest
             {
                 iOrder_id = order.iOrder_id,
-                sOrder_address_receiver = $"{diachicuthe.Text}, {tinhthanh}",
+                sOrder_address_receiver = $"{diachicuthe.Text}, {tinhthanh.Text}",
                 sOrder_name_receiver = hoten.Text,
                 sOrder_phone_receiver = sodienthoai.Text,
                 sPromotionalCode_code = voucher.Text,

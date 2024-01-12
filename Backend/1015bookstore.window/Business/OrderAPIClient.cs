@@ -67,5 +67,34 @@ namespace _1015bookstore.window.Business
             };
             
         }
+
+        public async Task<ResponseAPI<List<OrderViewModel>>> GetHistory(string session, Guid user_id)
+        {
+
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", session);
+
+            var response = await _client.GetAsync($"/api/order/history?gUser_id={user_id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var body = await response.Content.ReadAsStringAsync();
+                var orders = JsonSerializer.Deserialize<List<OrderViewModel>>(body);
+                return new ResponseAPI<List<OrderViewModel>>
+                {
+                    Status = response.StatusCode == System.Net.HttpStatusCode.OK ? true : false,
+                    Message = "Thành công",
+                    Data = orders,
+                };
+            }
+            else
+            {
+                return new ResponseAPI<List<OrderViewModel>>
+                {
+                    Status = response.StatusCode == System.Net.HttpStatusCode.OK ? true : false,
+                    Message = await response.Content.ReadAsStringAsync(),
+                    Data = new List<OrderViewModel>(),
+                };
+            }
+        }
     }
 }

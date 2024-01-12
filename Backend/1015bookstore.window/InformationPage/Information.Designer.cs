@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -70,7 +71,6 @@
             this.panel1 = new CSharp.Winform.UI.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -131,6 +131,22 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(206, 166);
             this.panel5.TabIndex = 9;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label27.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label27.Location = new System.Drawing.Point(16, 116);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(143, 22);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "Lịch sử mua hàng";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
+            this.label27.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
+            this.label27.MouseHover += new System.EventHandler(this.Label_MouseHover);
             // 
             // label3
             // 
@@ -657,21 +673,6 @@
             this.label4.Size = new System.Drawing.Size(289, 68);
             this.label4.TabIndex = 4;
             this.label4.Text = "Bookstore";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label27.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.label27.Location = new System.Drawing.Point(16, 116);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(143, 22);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "Lịch sử mua hàng";
-            this.label27.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
-            this.label27.MouseHover += new System.EventHandler(this.Label_MouseHover);
             // 
             // Information
             // 
