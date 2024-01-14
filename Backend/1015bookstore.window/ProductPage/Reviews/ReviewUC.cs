@@ -55,6 +55,7 @@ namespace _1015bookstore.window.ProductPage
             } 
             
             this.Height = commentpanel.Bottom + 20;
+            this.Parent.Height = this.Bottom + 400 + 20;
 
         }
 
@@ -77,6 +78,7 @@ namespace _1015bookstore.window.ProductPage
             }
 
             this.Height = commentpanel.Bottom + 20;
+            this.Parent.Height = this.Bottom + 400 + 20;
         }
 
         private void btt_5sao_Click(object sender, EventArgs e)
@@ -98,6 +100,7 @@ namespace _1015bookstore.window.ProductPage
             }
 
             this.Height = commentpanel.Bottom + 20;
+            this.Parent.Height = this.Bottom + 400 + 20;
         }
 
         private void btt_4sao_Click(object sender, EventArgs e)
@@ -119,6 +122,7 @@ namespace _1015bookstore.window.ProductPage
             }
 
             this.Height = commentpanel.Bottom + 20;
+            this.Parent.Height = this.Bottom + 400 + 20;
         }
 
         private void btt_3sao_Click(object sender, EventArgs e)
@@ -140,6 +144,7 @@ namespace _1015bookstore.window.ProductPage
             }
 
             this.Height = commentpanel.Bottom + 20;
+            this.Parent.Height = this.Bottom + 400 + 20;
         }
 
         private void btt_2sao_Click(object sender, EventArgs e)
@@ -161,6 +166,7 @@ namespace _1015bookstore.window.ProductPage
             }
 
             this.Height = commentpanel.Bottom + 20;
+            this.Parent.Height = this.Bottom + 400 + 20;
         }
 
         private void btt_1sao_Click(object sender, EventArgs e)
@@ -182,6 +188,7 @@ namespace _1015bookstore.window.ProductPage
             }
 
             this.Height = commentpanel.Bottom + 20;
+            this.Parent.Height = this.Bottom + 400 + 20;
         }
     }
 }

@@ -111,12 +111,18 @@ namespace _1015bookstore.window.Login
             {
                 var token = (string)response.Data["sUser_tokenL"];
                 Properties.Settings.Default.session = token;
+                
                 var id = (string)response.Data["gUser_id"];
                 Properties.Settings.Default.id = new Guid(id);
+                
                 var userPrincipal = this.ValidateToken(token);
                 var roleClaim = userPrincipal.FindFirst("Role");
                 var roleValue = roleClaim.Value;
                 Properties.Settings.Default.role = roleValue;
+
+                var username = userPrincipal.Identity.Name;
+                Properties.Settings.Default.username = username;
+
 
                 var form = this.TopLevelControl as Login;
                 form.main();

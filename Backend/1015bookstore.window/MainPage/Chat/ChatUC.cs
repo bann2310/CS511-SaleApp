@@ -1,88 +1,192 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using _1015bookstore.window.Business;
+using _1015bookstore.window.Emun;
+using _1015bookstore.window.ViewModel.Chat;
+using Microsoft.AspNetCore.SignalR.Client;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace _1015bookstore.window.MainPage.Chat
 {
     public partial class ChatUC : UserControl
     {
+        HubConnection connection;
+        UserAPIClient client;
+        string path_img;
+        ChatAPIClient client_chat;
         public ChatUC()
         {
             InitializeComponent();
-            content_setup();
+            client = new UserAPIClient();
+            client_chat = new ChatAPIClient();
+            GetImg();
+            GetData();
+
+            connection = new HubConnectionBuilder()
+                .WithUrl("https://localhost:7139/chat")
+                .Build();
+            connection.Closed += async (error) =>
+            {
+                await Task.Delay(new Random().Next(0, 5) * 1000);
+                await connection.StartAsync();
+            };
+            LoadAsync();
+
+
         }
 
-        private void content_setup()
+        private async void GetData()
         {
-            content.Height = 27;
-            panel2.Height = content.Height;
-            this.Height = panel2.Bottom;
-        }
-        private void content_TextChanged(object sender, EventArgs e)
-        {
-            string str = content.Text;
-            // Kiểm tra xem dấu Enter có ở đầu không
-            if (str.StartsWith(Environment.NewLine))
+            var response = await client_chat.GetTop10(Properties.Settings.Default.session, Properties.Settings.Default.id);
+            for (int i = response.Data.Count - 1; i >= 0; i--)
             {
-                // Xóa dấu Enter và đặt lại vị trí con trỏ
-                str = str.TrimStart('\r', '\n');
-            }
-
-            int totallength = str.Length;
-            // Kiểm tra số lượng ký tự không quá 255
-            if (totallength > 287)
-            {
-                // Giới hạn số lượng ký tự không quá 255
-                str = str.Substring(0, 287);
-            }  
-            else
-            {            
-                int wordperline = 47;
-                int x = (totallength / wordperline) + ((totallength % wordperline) > 0 ? 1 : 0);
-                
-                if (x > 1)
+                var item = response.Data[i];
+                if (item.stChat_type == MessageType.User)
                 {
-                    content.Height = x * 27;             
-                }
+                    var send = new Outcomming(item);
+                    flowLayoutPanel1.Controls.Add(send);
+                    send.Show();
+
+                    Point controlLocation = send.Location;
+
+                    // Tính toán vị trí cuộn mới dựa trên vị trí của control
+                    int newScrollX = Math.Max(0, controlLocation.X - flowLayoutPanel1.AutoScrollPosition.X);
+                    int newScrollY = Math.Max(0, controlLocation.Y - flowLayoutPanel1.AutoScrollPosition.Y);
+
+                    // Đặt vị trí cuộn mới
+                    flowLayoutPanel1.AutoScrollPosition = new Point(newScrollX, newScrollY);
+                }   
                 else
                 {
-                    content.Height = 27;
-                }
-                panel2.Height = content.Height - 5 * (x > 1 ? x : 0);
+                    var send = new Incomming(item);
+                    flowLayoutPanel1.Controls.Add(send);
+                    send.Show();
 
-                this.Height = panel2.Bottom;
-            }
+                    Point controlLocation = send.Location;
 
-            content.Text = str;
-            content.SelectionStart = str.Length;
+                    // Tính toán vị trí cuộn mới dựa trên vị trí của control
+                    int newScrollX = Math.Max(0, controlLocation.X - flowLayoutPanel1.AutoScrollPosition.X);
+                    int newScrollY = Math.Max(0, controlLocation.Y - flowLayoutPanel1.AutoScrollPosition.Y);
+
+                    // Đặt vị trí cuộn mới
+                    flowLayoutPanel1.AutoScrollPosition = new Point(newScrollX, newScrollY);
+                }    
+            }    
         }
 
-        private void content_KeyDown(object sender, KeyEventArgs e)
+        private async void GetImg()
         {
+            var response = await client.GetUserById(Properties.Settings.Default.session, Properties.Settings.Default.id);
+            path_img = response.Data.sUser_avt;
+        }
 
-            if (e.KeyValue == 13)
+
+        private async void LoadAsync()
+        {
+            connection.On<MessageViewModel>("ReceiveMessage", (message) =>
             {
-                //uctText uct = new uctText(this.cmt.Text);
-                //this.CommentBoard.Controls.Add(uct);
+                if (message.stChat_type == MessageType.Admin)
+                {
+                    NhanMessage(message);
+                }
+                
+            });
+            try
+            {
+                await connection.StartAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
-                //if (boyBtt.Checked == true && girlBtt.Checked == false)
-                //    uct.Content(cmt.Text, Image.FromFile(boyPath));
-                //else
-                //    uct.Content(cmt.Text, Image.FromFile(girlPath));
+            try
+            {
+                await connection.InvokeAsync("JoinPublish", Properties.Settings.Default.id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
-                ////uct.Location = new System.Drawing.Point(0, y);
-                ////uct.Size = new System.Drawing.Size(700, 51);
-                ////y = y + 50;
-                this.content.Clear();
-                this.content.SelectionStart = 0;
-                this.content.SelectionLength = 0;
+        public async void HuyConnect()
+        {
+            await connection.StopAsync();
+        }
+
+        private async void GuiMessageAsync()
+        {
+            string content =textBox1.Text;
+            if (!string.IsNullOrEmpty(content))
+            { 
+                textBox1.Clear();
+
+                var messagechat = new MessageViewModel
+                {
+                    gUser_id = Properties.Settings.Default.id,
+                    sChat_message = content,
+                    sChat_time = DateTime.Now,
+                    stChat_type = MessageType.User,
+                    sUser_avt = path_img,
+                };
+
+                try
+                {
+                    await connection.InvokeAsync("SendMessage", messagechat);
+                }
+                catch (Exception ex)
+                {
+                    textBox1.Text = ex.Message;
+                }
+                var send = new Outcomming(messagechat);
+                flowLayoutPanel1.Controls.Add(send);
+                send.Show();
+
+                Point controlLocation = send.Location;
+
+                // Tính toán vị trí cuộn mới dựa trên vị trí của control
+                int newScrollX = Math.Max(0, controlLocation.X - flowLayoutPanel1.AutoScrollPosition.X);
+                int newScrollY = Math.Max(0, controlLocation.Y - flowLayoutPanel1.AutoScrollPosition.Y);
+
+                // Đặt vị trí cuộn mới
+                flowLayoutPanel1.AutoScrollPosition = new Point(newScrollX, newScrollY);
+
+            }
+        }
+
+        private void NhanMessage(MessageViewModel message)
+        {
+            if (!string.IsNullOrEmpty(message.sChat_message))
+            {
+                var send = new Incomming(message);
+                flowLayoutPanel1.Controls.Add(send);
+                send.Show();
+
+                Point controlLocation = send.Location;
+
+                // Tính toán vị trí cuộn mới dựa trên vị trí của control
+                int newScrollX = Math.Max(0, controlLocation.X - flowLayoutPanel1.AutoScrollPosition.X);
+                int newScrollY = Math.Max(0, controlLocation.Y - flowLayoutPanel1.AutoScrollPosition.Y);
+
+                // Đặt vị trí cuộn mới
+                flowLayoutPanel1.AutoScrollPosition = new Point(newScrollX, newScrollY);
+
+            }
+        }
+
+        private void send_Click(object sender, EventArgs e)
+        {
+            GuiMessageAsync();
+        }
+
+        private void enter_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                GuiMessageAsync();
             }
         }
     }

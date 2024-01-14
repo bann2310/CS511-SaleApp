@@ -5,6 +5,7 @@ using _1015bookstore.window.InformationPage;
 using _1015bookstore.window.Main;
 using _1015bookstore.window.MainPage;
 using _1015bookstore.window.MainPage.Catemini;
+using _1015bookstore.window.MainPage.Chat;
 using _1015bookstore.window.MainPage.Informations;
 using _1015bookstore.window.MainPage.MainProduct;
 using _1015bookstore.window.ProductPage;
@@ -14,14 +15,8 @@ using _1015bookstore.window.ViewModel.Catalog.Products;
 using _1015bookstore.window.ViewModel.UserAddresses;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace _1015bookstore.window
 {
@@ -33,6 +28,7 @@ namespace _1015bookstore.window
         UserControl updateAddressOpen;
         UserControl createAddressOpen;
         UserControl cate;
+        UserControl chat;
 
         private ProductAPIClient client;
 
@@ -44,12 +40,14 @@ namespace _1015bookstore.window
             {
                 pictureBox3.Visible = false;
                 pictureBox4.Visible = false;
+                pictureBox5.Visible = false;
                 button2.Visible = true;
             }
             else
             {
                 pictureBox3.Visible = true;
                 pictureBox4.Visible = true;
+                pictureBox5.Visible = true;
                 button2.Visible = false;
             }
             client = new ProductAPIClient();
@@ -368,6 +366,31 @@ namespace _1015bookstore.window
             page.Show();
 
             currentUC = page;
+        }
+        #endregion
+
+        #region Chat
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (chat == null)
+            {
+                var chat_ = new ChatUC();
+                this.Controls.Add(chat_);
+                chat_.Location = new Point(831, 58);
+                chat_.BringToFront();
+                chat_.Show();
+                chat = chat_;
+
+                pictureBox5.BackColor = Color.FromArgb(213, 255, 234);
+            }
+            else
+            {
+                var chatuc = chat as ChatUC;
+                chatuc.HuyConnect();
+                this.Controls.Remove(chat);
+                chat = null;
+                pictureBox5.BackColor = Color.White;
+            }
         }
         #endregion
     }
