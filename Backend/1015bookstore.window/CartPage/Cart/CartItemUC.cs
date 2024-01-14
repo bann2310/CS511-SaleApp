@@ -39,11 +39,15 @@ namespace _1015bookstore.window.CartPage
 
         private async void RemoveCart()
         {
+            var flag = checkBox1.Checked;   
             var response = await client.DeleteCart(Properties.Settings.Default.session, cart.iCart_id);
             if (response.Status)
             {
                 var parent = this.Parent.Parent as MyCart;
-                parent.SubTotal(Convert.ToInt32(soluong.Text) * cart.vProduct_price);
+                if (flag)
+                {
+                    parent.SubTotal(Convert.ToInt32(soluong.Text) * cart.vProduct_price);
+                }    
 
                 var flowpanel = this.Parent;
                 flowpanel.Height -= 150; 
@@ -90,7 +94,7 @@ namespace _1015bookstore.window.CartPage
             var name_ = cart.sProduct_name;
             if (name_.Length >= 54)
             {
-                for (int i = 55 - 1; i >= 0; i--)
+                for (int i = 54 - 1; i >= 0; i--)
                 {
                     if (name_[i] == ' ')
                     {
@@ -101,7 +105,7 @@ namespace _1015bookstore.window.CartPage
             }
             if (name_.Length >= 80)
             {
-                for (int i = 81 - 1; i >= 0; i--)
+                for (int i = 80 - 1; i >= 0; i--)
                 {
                     if (name_[i] == ' ')
                     {

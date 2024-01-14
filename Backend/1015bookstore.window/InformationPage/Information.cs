@@ -159,5 +159,28 @@ namespace _1015bookstore.window.MainPage.Informations
             review = null;
             GetHistory();
         }
+
+        private void GetReport()
+        {
+            this.Controls.Remove(currentUC);
+            currentUC = null;
+
+            var report = new ReportInfor();
+
+
+            report.Location = new Point(380, 30);
+            this.Controls.Add(report);
+            report.BringToFront();
+            report.Show();
+
+            this.Height = report.Bottom + 20 + 400;
+
+            currentUC = report;
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+            GetReport();
+        }
     }
 }

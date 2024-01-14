@@ -104,6 +104,14 @@ namespace _1015bookstore.application.Catalog.Orders
             }
 
 
+            var soldout = new SoldOut
+            {
+                user_id = order.user_id,
+                time = DateTime.Now,
+                total = order.total,
+            };
+            await _context.SoldOuts.AddAsync(soldout);
+
 
             if (await _context.SaveChangesAsync() > 0)
             {

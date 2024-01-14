@@ -71,6 +71,7 @@
             this.panel1 = new CSharp.Winform.UI.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -122,6 +123,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.label28);
             this.panel5.Controls.Add(this.label27);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label1);
@@ -129,7 +131,7 @@
             this.panel5.Location = new System.Drawing.Point(102, 28);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(206, 166);
+            this.panel5.Size = new System.Drawing.Size(206, 201);
             this.panel5.TabIndex = 9;
             // 
             // label27
@@ -674,6 +676,22 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Bookstore";
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label28.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.label28.Location = new System.Drawing.Point(16, 155);
+            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(80, 22);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Thống kê";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
+            this.label28.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
+            this.label28.MouseHover += new System.EventHandler(this.Label_MouseHover);
+            // 
             // Information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -747,5 +765,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
     }
 }

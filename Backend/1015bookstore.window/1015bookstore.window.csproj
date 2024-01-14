@@ -222,6 +222,7 @@
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -241,6 +242,7 @@
     <Compile Include="Business\OrderAPIClient.cs" />
     <Compile Include="Business\ProductAPIClient.cs" />
     <Compile Include="Business\PromotionalCodeAPIClient.cs" />
+    <Compile Include="Business\ReportAPIClient.cs" />
     <Compile Include="Business\ReviewAPIClient.cs" />
     <Compile Include="Business\UserAddressAPIClient.cs" />
     <Compile Include="Business\UserAPIClient.cs" />
@@ -351,6 +353,12 @@
     </Compile>
     <Compile Include="InformationPage\OrderHistoryDetail.Designer.cs">
       <DependentUpon>OrderHistoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationPage\ReportInfor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationPage\ReportInfor.Designer.cs">
+      <DependentUpon>ReportInfor.cs</DependentUpon>
     </Compile>
     <Compile Include="InformationPage\ReviewAfterBuy.cs">
       <SubType>UserControl</SubType>
@@ -543,6 +551,7 @@
     <Compile Include="ViewModel\Catalog\Reviews\ReviewRequestCreate.cs" />
     <Compile Include="ViewModel\Catalog\Reviews\ReviewViewModel.cs" />
     <Compile Include="ViewModel\Chat\MessageViewModel.cs" />
+    <Compile Include="ViewModel\Report\ReportDateMoney.cs" />
     <Compile Include="ViewModel\ResponseAPI.cs" />
     <Compile Include="ViewModel\UserAddress\AddressViewModel.cs" />
     <Compile Include="ViewModel\UserAddress\UserAddressRequestCreate.cs" />
@@ -603,6 +612,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\OrderHistoryDetail.resx">
       <DependentUpon>OrderHistoryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationPage\ReportInfor.resx">
+      <DependentUpon>ReportInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage\ReviewAfterBuy.resx">
       <DependentUpon>ReviewAfterBuy.cs</DependentUpon>

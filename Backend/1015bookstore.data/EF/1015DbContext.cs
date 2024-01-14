@@ -37,6 +37,7 @@ namespace _1015bookstore.data.EF
             modelBuilder.ApplyConfiguration(new ReviewConfiguration());
             modelBuilder.ApplyConfiguration(new ReportDataConfiguration());
             modelBuilder.ApplyConfiguration(new MessageConfiguration());
+            modelBuilder.ApplyConfiguration(new SoldOutConfiguration());
 
             modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("UserClaims");
             modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("UserRoles").HasKey(x => new { x.UserId, x.RoleId });
@@ -63,7 +64,7 @@ namespace _1015bookstore.data.EF
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<UserUsePromotionalCode> UserUsePromotionalCode { get; set;}
-
+        public DbSet<SoldOut> SoldOuts { get; set; }
         public DbSet<CodeForgotPassword> CodesForgotPassword { get; set;}
 
     }
