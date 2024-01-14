@@ -53,7 +53,7 @@ namespace _1015bookstore.window.TrendingPage
             var name_ = product.sProduct_name;
             if (name_.Length >= 33)
             {
-                for (int i = 34 - 1; i >= 0; i--)
+                for (int i = 33 - 1; i >= 0; i--)
                 {
                     if (name_[i] == ' ')
                     {

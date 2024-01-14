@@ -25,13 +25,13 @@ namespace _1015bookstore.window.MainPage.MainProduct
         private void sethomepage()
         {
             //45, 441 , 45, 1036
-            var card1 = new TrendingUC("Sách yêu thích nhất", 3);
+            var card1 = new TrendingUC("Sách yêu thích nhất", 38);
             this.Controls.Add(card1);
             card1.Location = new Point(45, 441);
             card1.BringToFront();
             card1.Show();
 
-            var card2 = new TrendingUC("Sách ngôn ngữ", 4);
+            var card2 = new TrendingUC("Tiểu Thuyết", 24);
             this.Controls.Add(card2);
             card2.Location = new Point(45, 1080);
             card2.BringToFront();

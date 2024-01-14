@@ -56,7 +56,7 @@ namespace _1015bookstore.window.CartPage.Order
             var name_ = order.sProduct_name;
             if (name_.Length >= 44)
             {
-                for (int i = 45 - 1; i >= 0; i--)
+                for (int i = 44 - 1; i >= 0; i--)
                 {
                     if (name_[i] == ' ')
                     {
@@ -67,7 +67,7 @@ namespace _1015bookstore.window.CartPage.Order
             }
             if (name_.Length >= 60)
             {
-                for (int i = 61 - 1; i >= 0; i--)
+                for (int i = 60 - 1; i >= 0; i--)
                 {
                     if (name_[i] == ' ')
                     {
